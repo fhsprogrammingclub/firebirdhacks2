@@ -14,7 +14,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 particlesJS({
         "particles": {
             "number": {
-                "value": 66,
+                "value": 47,
                 "density": {
                     "enable": true,
                     "value_area": 800
@@ -61,9 +61,9 @@ particlesJS({
             "line_linked": {
                 "enable": true,
                 "distance": 150,
-                "color": "#ff5c5c",
-                "opacity": 0.2683101981549727,
-                "width": 0.6313181133058181
+                "color": "#9b0000",
+                "opacity": 0.3630079151508454,
+                "width": 1
             },
             "move": {
                 "enable": true,
@@ -89,7 +89,7 @@ particlesJS({
                 },
                 "onclick": {
                     "enable": true,
-                    "mode": "push"
+                    "mode": "remove"
                 },
                 "resize": true
             },
