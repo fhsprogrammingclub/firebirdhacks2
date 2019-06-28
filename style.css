@@ -50,6 +50,10 @@
     margin-top: -15%;
 }
 
+#particles-js {
+    height: 200%;
+}
+
 @font-face {
     font-family: Montserrat;
     src: url("montserrat/Montserrat-Thin.otf");
