@@ -57,3 +57,12 @@
     font-family: Montserrat;
     src: url("../firebirdhacks2/montserrat/Montserrat-Thin.otf");
 }
+
+#faq {
+    position: absolute;
+    border-style: solid;
+    border-width: 1px;
+    width: 40%;
+    height: 100%;
+    left: 30%;
+}
