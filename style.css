@@ -40,10 +40,9 @@
     position: absolute;
     opacity: 0.4;
 
-    width: 30%;
     height: 60%;
 
-    left: 50%;
+    left: 49%;
     margin-left: -15%;
 
     top: 50%;
@@ -78,21 +77,54 @@
 }
 
 .faqcomponent {
-    width: 40%;
-    padding: 5% 5% 5% 5%;
+    width: 20%;
+    height: 28%;
+    padding: 1%;
     background: #ffe1de;
     opacity: 0.8;
+    border-style: solid;
+    border-width: 1px;
 }
 
-#description {
+/*for first row*/
+.first-row {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.first-in-first-row {
+    padding-left: 4%;
+}
+
+.last-in-first-row {
+    padding-right: 4%;
+}
+
+#hackathon {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 #team {
+    position: absolute;
+    left: 26%;
+    top: 0;
 }
 
 #cost {
+    position: absolute;
+    left: 50%;
+    top: 0;
 }
 
+#description {
+    position: absolute;
+    left: 74%;
+    top: 0;
+}
+
+/*for second row*/
 #is-needed {
 }
 
