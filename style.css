@@ -82,12 +82,14 @@
     padding: 1%;
     background: #ffe1de;
     opacity: 0.8;
-    border-style: solid;
-    border-width: 1px;
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
 }
 
 /*for first row*/
 .first-row {
+    position: absolute;
+    top: 18%;
     padding-left: 2%;
     padding-right: 2%;
 }
@@ -103,38 +105,88 @@
 #hackathon {
     position: absolute;
     left: 0;
-    top: 0;
 }
 
 #team {
     position: absolute;
     left: 26%;
-    top: 0;
 }
 
 #cost {
     position: absolute;
     left: 50%;
-    top: 0;
 }
 
 #description {
     position: absolute;
     left: 74%;
-    top: 0;
 }
 
 /*for second row*/
-#is-needed {
+
+.second-row {
+    position: absolute;
+    top: calc(50% - 1px);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.first-in-second-row {
+    padding-left: 10%;
+}
+
+.last-in-second-row {
+    padding-right: 10%;
 }
 
 #prerequisites {
 }
 
+#is-needed {
+    left: 35%;
+}
+
 #experience {
+    left: 65%;
 }
 
 #filler {
     border-style: solid;
     border-width: 1px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
