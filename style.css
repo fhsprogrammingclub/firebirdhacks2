@@ -1,8 +1,22 @@
 #title {
+
+    position: absolute;
     color: red;
     font-family: Montserrat;
     font-size: 24px;
     letter-spacing: 10px;
+    width: 22%;
+    left: calc((100% - 22%)/2);
+
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+#title:hover {
+    color: darkred;
 }
 
 .title-holder {
@@ -82,8 +96,22 @@
     padding: 1%;
     background: #ffe1de;
     opacity: 0.8;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
     /*border-style: solid;*/
     /*border-width: 1px;*/
+}
+
+.faqcomponent:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    z-index: 1000;
 }
 
 /*for first row*/
@@ -126,7 +154,7 @@
 
 .second-row {
     position: absolute;
-    top: calc(50% - 1px);
+    top: calc(50% - 3px);
     padding-left: 5%;
     padding-right: 5%;
 }
