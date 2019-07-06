@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<script>
+    function scrollToFAQ() {
+        document.getElementById("logo-section").scrollIntoView({
+            behavior: "smooth"
+        })
+    }
+
+    function scrollToAbout() {
+        document.getElementById("about").scrollIntoView({
+            behavior: "smooth"
+        })
+    }
+</script>
+
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./Assets/Libraries/animations.css">
@@ -19,6 +34,16 @@
         <p id="title">Firebird Hacks 2.0</p>
     </div>
 </div>
+
+<nav class="fadeIn nav1">
+    <div class="menu">
+        <ul class="menu-area">
+            <li><a href="index.html" target="">FirebirdHacks 2.0</a></li>
+            <li><a onclick="scrollToFAQ()">FAQ</a></li>
+            <li><a   onclick="scrollToAbout()">About FirebirdHacks</a></li>
+        </ul>
+    </div>
+</nav>
 
 <div id="logo-section">
 
@@ -77,27 +102,23 @@
 
 <div id="about">
     <div id="about-container">
-    <div id="about-title-section">
-        <p id="about-title">About Firebird Hacks 2.0</p>
-    </div>
-    <div id="about-paragraph">
-        <p id="about-description">
-            Fremont High School's Second Annual Hackathon!
-            <br><br>
-            We bring together hundreds of high school students from across the Bay Area to work together and make their
-            ideas a reality.
-            <br><br>
-            We'll provide the food, refreshments and hacking spaces for you—the hackers—to do your magic. Just bring
-            your ideas and your passion!
-        </p>
-    </div>
+        <div id="about-title-section">
+            <p id="about-title">About Firebird Hacks 2.0</p>
+        </div>
+        <div id="about-paragraph">
+            <p id="about-description">
+                Fremont High School's Second Annual Hackathon!
+                <br><br>
+                We bring together hundreds of high school students from across the Bay Area to work together and make
+                their
+                ideas a reality.
+                <br><br>
+                We'll provide the food, refreshments and hacking spaces for you—the hackers—to do your magic. Just bring
+                your ideas and your passion!
+            </p>
+        </div>
     </div>
 </div>
 
-<div id="the-team">
-
-</div>
-
-<script src="css3-animate-it.js"></script>
 </body>
 </html>

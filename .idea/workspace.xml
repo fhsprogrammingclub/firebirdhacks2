@@ -14,23 +14,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+            <state relative-caret-position="394">
+              <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
               <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="113" column="17" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="17" />
+            <state relative-caret-position="640">
+              <caret line="68" column="19" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -57,8 +58,8 @@
         <option value="$PROJECT_DIR$/Assets/Libraries/particles.js-master/particles.js" />
         <option value="$PROJECT_DIR$/Assets/Libraries/particles.js-master/demo/particles.json" />
         <option value="$PROJECT_DIR$/Assets/Libraries/particles.js-master/demo/js/app.js" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -71,9 +72,9 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -81,6 +82,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,7 +109,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -158,7 +159,8 @@
       <workItem from="1561942060882" duration="453000" />
       <workItem from="1561942557900" duration="830000" />
       <workItem from="1562283410557" duration="2843000" />
-      <workItem from="1562360233749" duration="613000" />
+      <workItem from="1562360233749" duration="3344000" />
+      <workItem from="1562369189340" duration="4441000" />
     </task>
     <task id="LOCAL-00001" summary="added initial stylings for homepage">
       <created>1561690456610</created>
@@ -230,17 +232,31 @@
       <option name="project" value="LOCAL" />
       <updated>1561852495881</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fixed animations for faq components">
+      <created>1562360888265</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1562360888265</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added about div">
+      <created>1562362258622</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1562362258622</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18022000" />
+    <option name="totallyTimeSpent" value="25194000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2081545" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21033014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -274,7 +290,9 @@
     <MESSAGE value="changed particles orientation" />
     <MESSAGE value="Added faq div" />
     <MESSAGE value="added content divs" />
-    <option name="LAST_COMMIT_MESSAGE" value="added content divs" />
+    <MESSAGE value="fixed animations for faq components" />
+    <MESSAGE value="added about div" />
+    <option name="LAST_COMMIT_MESSAGE" value="added about div" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Libraries/particles.js-master/demo/js/lib/stats.js" />
@@ -285,20 +303,21 @@
     <entry file="file://$PROJECT_DIR$/Assets/Libraries/particles.js-master/demo/js/app.js" />
     <entry file="file://$PROJECT_DIR$/Assets/Libraries/particles.js-master/demo/particles.json" />
     <entry file="file://$PROJECT_DIR$/Assets/Libraries/animations.css" />
-    <entry file="file://$PROJECT_DIR$/style.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="113" column="17" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="17" />
+        <state relative-caret-position="394">
+          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="640">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="19" />
         </state>
       </provider>
     </entry>

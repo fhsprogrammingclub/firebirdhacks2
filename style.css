@@ -1,12 +1,11 @@
 #title {
-
     position: absolute;
     color: red;
     font-family: Montserrat;
     font-size: 24px;
     letter-spacing: 10px;
     width: 22%;
-    left: calc((100% - 22%)/2);
+    left: calc((100% - 22%)/2 + 1%);
 
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
@@ -27,6 +26,58 @@
     margin-top: -5%;
     text-align: center;
 }
+
+/*nav bar under title*/
+.nav1 {
+    position: absolute;
+    padding: 2px 2px 2px 2px;
+    text-align: center;
+    background: white;
+    top: 47%;
+
+    width: 100%;
+    z-index: 999;
+}
+
+.menu-area li a {
+    text-decoration: none;
+    color: #91010b;
+    letter-spacing: 4px;
+    font-size: 14px;
+    line-height: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: center;
+    font-weight: 100;
+
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+}
+
+.menu-area li a:hover {
+    background-color: #ffe1de;
+    padding: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu-area li {
+    display: inline-block;
+    list-style-type: none;
+    font-family: Montserrat;
+}
+
+.menu {
+    background: transparent;
+    text-align: center;
+}
+
+
 
 .bgimg-1 {
     position: relative;
@@ -111,7 +162,7 @@
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
     transform: scale(1.05);
-    z-index: 1000;
+    z-index: 10;
 }
 
 /*for first row*/
@@ -154,7 +205,7 @@
 
 .second-row {
     position: absolute;
-    top: calc(50% - 3px);
+    top: calc(49.9%);
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -187,7 +238,7 @@
 #about {
     position: absolute;
     top: 200%;
-    height: 90%;
+    height: 100%;
     width: 100%;
 }
 
@@ -200,10 +251,13 @@
 }
 
 #about-title {
+    position: absolute;
     color: red;
     font-family: Montserrat;
     font-size: 40px;
-    text-align: center;
+    text-align: left;
+    width: 60%;
+    left: 20%;
     -webkit-transition: ease-in-out 0.2s;
     -moz-transition: ease-in-out 0.2s;
     -ms-transition: ease-in-out 0.2s;
@@ -261,6 +315,28 @@
     top: 10%;
 }
 
+/*The team section*/
+
+#about-team {
+    position: absolute;
+    top: 300%;
+}
+
+.host {
+    text-align: center;
+    font-family: Montserrat;
+}
+
+.host img {
+    overflow: hidden;
+    border-radius: 50%;
+    perspective: 1px;
+}
+
+.host {
+    border-style: solid;
+    border-width: 1px;
+}
 
 
 
