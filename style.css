@@ -366,8 +366,11 @@
 }
 
 .card {
-    position: absolute;
     /*border-style: solid;*/
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    border-radius: 30%;
+    position: absolute;
     width: 33.33%;
     height: 32%;
 
@@ -380,6 +383,7 @@
 
 .card:hover {
     box-shadow: 10px 10px 10px 10px #888888;
+    cursor: pointer;
 }
 
 #Roshan {
@@ -413,7 +417,7 @@
 }
 
 #Dwijen {
-    top: 64%;
+    top: 32%;
     left: 33.33%;
 }
 
