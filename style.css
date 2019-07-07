@@ -2,7 +2,7 @@
 
 #first-section {
     position: absolute;
-    top: 25%;
+    top: 35%;
     left: 25%;
     width: 50%;
     text-align: center;
@@ -37,7 +37,7 @@
     padding: 2px 2px 2px 2px;
     text-align: center;
     background: white;
-    top: 47%;
+    top: 51%;
     width: 70%;
     left: 15%;
     z-index: 999;
@@ -307,6 +307,7 @@
     color: #ab0000;
     font-family: Montserrat;
     font-size: 20px;
+    text-align: left;
 }
 
 #about-container {
@@ -323,52 +324,94 @@
 
 /*The team section*/
 
-#about-team {
+#team-container {
     position: absolute;
     top: 300%;
+    height: 200%;
+    width: 100%;
+    background-color: #ffe1de;
 }
 
-.host {
+#team-section {
+    position: absolute;
+    border-style: solid;
+    border-width: 10px;
+    top: 10%;
+    width: 80%;
+    left: 10%;
+    z-index: 0;
+    border-color: transparent;
+    height: 80%;
+}
+
+.image-container {
+    /*border-style: solid;*/
+    height: 300px;
+}
+
+.image-container img {
+    position: absolute;
+    top: 5%;
+    width: 50%;
+    left: 25%;
+    /*border-style: solid;*/
+}
+
+.card h1, p {
     text-align: center;
     font-family: Montserrat;
 }
 
-.host img {
-    overflow: hidden;
-    border-radius: 50%;
-    perspective: 1px;
+.card {
+    position: absolute;
+    /*border-style: solid;*/
+    width: 33.33%;
+    height: 32%;
+
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
 }
 
-.host {
-    border-style: solid;
-    border-width: 1px;
+.card:hover {
+    box-shadow: 10px 10px 10px 10px #888888;
 }
 
+#Roshan {
+    top: 0;
+    left: 0;
+}
 
+#Neel {
+    top: 0;
+    left: 33.33%;
+}
 
+#Kevin {
+    top: 32%;
+    left: 0;
+}
 
+#David {
+    top: 0;
+    left: 66.66%;
+}
 
+#Aishik {
+    top: 32%;
+    left: 66.66%;
+}
 
+#Peyton {
+    top: 32%;
+    left: 33.33%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Dwijen {
+    top: 64%;
+    left: 33.33%;
+}
 
 

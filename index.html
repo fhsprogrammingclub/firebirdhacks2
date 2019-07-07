@@ -13,6 +13,12 @@
             behavior: "smooth"
         })
     }
+
+    function scrollToTeam() {
+        document.getElementById("team-container").scrollIntoView({
+            behavior: "smooth"
+        })
+    }
 </script>
 
 <head>
@@ -41,6 +47,7 @@
             <li><a href="index.html" target="">FirebirdHacks 2.0</a></li>
             <li><a onclick="scrollToFAQ()">FAQ</a></li>
             <li><a onclick="scrollToAbout()">About FirebirdHacks</a></li>
+            <li><a onclick="scrollToTeam()">Our Team</a></li>
         </ul>
     </div>
 </nav>
@@ -119,6 +126,77 @@
         </div>
     </div>
 </div>
+
+<!--Team section, spliced from losaltoshacks.com-->
+<div id="team-container">
+    <div id="team-section">
+
+        <div class="card" id="roshan">
+            <div class="image-container">
+                <img src="./Assets/hosts/neel.jpg">
+            </div>
+            <h1>Roshan Prabhakar</h1>
+            <p>Webmaster</p>
+            <p>roshanprabhakar</p>
+        </div>
+
+        <div class="card" id="Neel">
+            <div class="image-container">
+                <img src="./Assets/hosts/neel.jpg">
+            </div>
+            <h1>Neel Kandlikar</h1>
+            <p>Operations</p>
+            <p>neelkandlikar</p>
+        </div>
+
+        <div class="card" id="David">
+            <div class="image-container">
+                <img src="./Assets/hosts/neel.jpg">
+            </div>
+            <h1>David Zhang</h1>
+            <p>Coordinating Director</p>
+            <p>davidzhang</p>
+        </div>
+
+        <div class="card" id="Kevin">
+            <div class="image-container">
+                <img src="./Assets/hosts/neel.jpg">
+            </div>
+            <h1>Kevin Wang</h1>
+            <p>Coordinating Director</p>
+            <p>kwang0324</p>
+        </div>
+
+        <div class="card" id="Dwijen">
+            <div class="image-container">
+                <img src="./Assets/hosts/neel.jpg">
+            </div>
+            <h1>Dwijen Chawra</h1>
+            <p>Operations</p>
+            <p>dchawra</p>
+        </div>
+
+        <div class="card" id="Peyton">
+            <div class="image-container">
+                <img src="./Assets/hosts/neel.jpg">
+            </div>
+            <h1>Peyton Carol</h1>
+            <p>Sponsorship</p>
+            <p>roshanprabhakar987@gmail.com</p>
+        </div>
+
+        <div class="card" id="Aishik">
+            <div class="image-container">
+                <img src="./Assets/hosts/neel.jpg">
+            </div>
+            <h1>Aishik Bhattacharyya</h1>
+            <p>Sponsorship</p>
+            <p>aishikb</p>
+        </div>
+    </div>
+</div>
+
+<!--end judges section-->
 
 </body>
 </html>
