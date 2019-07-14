@@ -2,7 +2,7 @@
 
 #first-section {
     position: absolute;
-    top: 35%;
+    top: 28%;
     left: 25%;
     width: 50%;
     text-align: center;
@@ -331,18 +331,20 @@
     height: 140%;
     width: 100%;
     background-color: #ffe1de;
+    /*background-color: black;*/
 }
 
 #team-section {
     position: absolute;
     border-style: solid;
     border-width: 10px;
-    top: 10%;
+    top: 5%;
     width: 80%;
     left: 10%;
     z-index: 0;
     border-color: transparent;
-    height: 130%;
+    height: calc(90% - 20px);
+    /*background-color: black;*/
 }
 
 .image-container {
@@ -367,13 +369,14 @@
 }
 
 .card {
-    /*border-style: solid;*/
     -webkit-border-radius: 30%;
     -moz-border-radius: 30%;
     border-radius: 30%;
     position: absolute;
     width: 33.33%;
-    height: 32%;
+    height: 49%;
+
+    /*border-style: solid;*/
 
     -webkit-transition: ease-in-out 0.2s;
     -moz-transition: ease-in-out 0.2s;
@@ -398,7 +401,7 @@
 }
 
 #Kevin {
-    top: 32%;
+    top: 49%;
     left: 0;
 }
 
@@ -408,18 +411,23 @@
 }
 
 #Aishik {
-    top: 32%;
+    top: 49%;
     left: 66.66%;
 }
 
 #Peyton {
-    top: 64%;
+    top: calc(49*2%);
     left: 33.33%;
 }
 
 #Dwijen {
-    top: 32%;
+    top: 49%;
     left: 33.33%;
+}
+
+#sponsor {
+    position: absolute;
+    top: 400%;
 }
 
 
