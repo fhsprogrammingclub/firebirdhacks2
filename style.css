@@ -122,11 +122,6 @@
 #particles-js {
 }
 
-@font-face {
-    font-family: Montserrat;
-    src: url("../firebirdhacks2/montserrat/Montserrat-Thin.otf");
-}
-
 #faq {
     position: absolute;
     border-style: solid;
@@ -472,7 +467,17 @@
     }
 
     .card {
-        height: 40%;
+        height: 43%;
+    }
+
+    #first-section {
+        width: 100%;
+        left: 0;
     }
 }
 
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../firebirdhacks2/montserrat/Montserrat-Thin.otf");
+}

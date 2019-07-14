@@ -19,6 +19,16 @@
             behavior: "smooth"
         })
     }
+
+    function loadMobileIfNeeded() {
+
+        let w = window.innerWidth;
+        let h = window.innerHeight;
+
+        if (h >= w) {
+            location.replace("https://fhsprogrammingclub.github.io/redirect/")
+        }
+    }
 </script>
 
 <head>
@@ -29,7 +39,7 @@
     <meta charset="UTF-8">
     <title>Firebird Hacks 2.0</title>
 </head>
-<body>
+<body onload="loadMobileIfNeeded()">
 
 <div id="particles-js" style="z-index: 9999"></div>
 <script src="./Assets/Libraries/particles.js-master/particles.js"></script>
