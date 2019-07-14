@@ -2,7 +2,7 @@
 
 #first-section {
     position: absolute;
-    top: 28%;
+    top: 30%;
     left: 25%;
     width: 50%;
     text-align: center;
@@ -28,7 +28,6 @@
     position: absolute;
     top: 0;
     left: 100%;
-
 }
 
 /*nav bar under title*/
@@ -416,7 +415,7 @@
 }
 
 #Peyton {
-    top: calc(49*2%);
+    top: calc(49 * 2%);
     left: 33.33%;
 }
 
@@ -430,4 +429,50 @@
     top: 400%;
 }
 
+@media (min-width: 1680px) {
+    .second-row {
+        top: calc(49.6%);
+    }
+
+    #first-section {
+        top: 34%;
+    }
+}
+
+
+@media (min-width: 1920px) {
+    .second-row {
+        top: calc(49.9%);
+    }
+
+    #first-section {
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        width: 50%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .card h1 {
+        font-size: 30px;
+    }
+
+    .first-row {
+        top: 10%;
+    }
+
+    .faqcomponent {
+        height: 38%;
+    }
+
+    .second-row {
+        top: calc(50.5% + 1px);
+    }
+
+    .card {
+        height: 40%;
+    }
+}
 
