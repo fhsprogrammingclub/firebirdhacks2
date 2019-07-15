@@ -476,6 +476,19 @@
     }
 }
 
+@media (max-width: 1366px) and (max-height: 768px) {
+    .faqcomponent {
+        height: 38%;
+    }
+    .first-row {
+        top: 10%;
+    }
+    .second-row {
+        top: 52.2%;
+    }
+
+}
+
 
 @font-face {
     font-family: Montserrat;
