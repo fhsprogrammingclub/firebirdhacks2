@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="05f5b53e-8568-4a93-9fb5-56bb5d4f37d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,12 +10,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="firebirdhacks2" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="-1904">
               <caret line="28" column="78" selection-start-line="28" selection-start-column="78" selection-end-line="28" selection-end-column="78" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -28,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="455" lean-forward="true" selection-start-line="455" selection-end-line="455" />
+            <state relative-caret-position="688">
+              <caret line="487" column="5" selection-start-line="487" selection-start-column="5" selection-end-line="487" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -186,7 +188,7 @@
       <workItem from="1562817100014" duration="2799000" />
       <workItem from="1562869600620" duration="250000" />
       <workItem from="1562901214264" duration="2100000" />
-      <workItem from="1563123764297" duration="8305000" />
+      <workItem from="1563123764297" duration="10022000" />
     </task>
     <task id="LOCAL-00001" summary="added initial stylings for homepage">
       <created>1561690456610</created>
@@ -377,19 +379,33 @@
       <option name="project" value="LOCAL" />
       <updated>1563143973442</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="changed orientation lock">
+      <created>1563144302113</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1563144302113</updated>
+    </task>
+    <task id="LOCAL-00029" summary="added stylings for aishik's computer">
+      <created>1563148868854</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1563148868854</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54714000" />
+    <option name="totallyTimeSpent" value="56431000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1315229" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49898785" visible="true" weight="0.1315229" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="2" sideWeight="0.50101215" side_tool="true" weight="0.1315229" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -412,7 +428,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added initial stylings for homepage" />
     <MESSAGE value="adding unversioned files" />
     <MESSAGE value="positioned logo" />
     <MESSAGE value="added particles.js" />
@@ -436,7 +451,9 @@
     <MESSAGE value="added media queries for certain laptops, desktops, and ipad" />
     <MESSAGE value="added more media queries, added redirect for mobile access" />
     <MESSAGE value="added orientation lock" />
-    <option name="LAST_COMMIT_MESSAGE" value="added orientation lock" />
+    <MESSAGE value="changed orientation lock" />
+    <MESSAGE value="added stylings for aishik's computer" />
+    <option name="LAST_COMMIT_MESSAGE" value="added stylings for aishik's computer" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Libraries/particles.js-master/demo/js/lib/stats.js" />
@@ -469,7 +486,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="-1904">
           <caret line="28" column="78" selection-start-line="28" selection-start-column="78" selection-end-line="28" selection-end-column="78" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -479,8 +496,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="455" lean-forward="true" selection-start-line="455" selection-end-line="455" />
+        <state relative-caret-position="688">
+          <caret line="487" column="5" selection-start-line="487" selection-start-column="5" selection-end-line="487" selection-end-column="5" />
         </state>
       </provider>
     </entry>
