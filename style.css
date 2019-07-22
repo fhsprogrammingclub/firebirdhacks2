@@ -328,7 +328,7 @@
     position: absolute;
     left: 0;
     top: 300%;
-    height: 140%;
+    height: 130%;
     width: 100%;
     background-color: #ffe1de;
     /*background-color: black;*/
@@ -374,7 +374,7 @@
     border-radius: 30%;
     position: absolute;
     width: 33.33%;
-    height: 49%;
+    height: 45%;
 
     /*border-style: solid;*/
 
@@ -391,7 +391,7 @@
 }
 
 #Roshan {
-    top: 0;
+    top: 100%;
     left: 0;
 }
 
@@ -401,7 +401,7 @@
 }
 
 #Kevin {
-    top: 49%;
+    top: 51%;
     left: 0;
 }
 
@@ -411,17 +411,17 @@
 }
 
 #Aishik {
-    top: 49%;
+    top: 51%;
     left: 66.66%;
 }
 
 #Peyton {
-    top: calc(49 * 2%);
+    top: calc(51 * 2%);
     left: 33.33%;
 }
 
 #Dwijen {
-    top: 49%;
+    top: 51%;
     left: 33.33%;
 }
 
