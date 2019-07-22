@@ -35,7 +35,7 @@
     position: absolute;
     padding: 2px 2px 2px 2px;
     text-align: center;
-    background: white;
+    background: transparent;
     top: 51%;
     width: 70%;
     left: 15%;
@@ -80,6 +80,10 @@
 }
 
 .menu {
+    background: transparent;
+}
+
+.menu-area {
     background: transparent;
 }
 
