@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="05f5b53e-8568-4a93-9fb5-56bb5d4f37d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+            <state relative-caret-position="991">
+              <caret line="106" column="20" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="20" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -27,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7200">
-              <caret line="480" column="15" selection-start-line="480" selection-start-column="15" selection-end-line="480" selection-end-column="15" />
+            <state relative-caret-position="360">
+              <caret line="212" column="25" selection-start-line="212" selection-start-column="25" selection-end-line="212" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -69,8 +70,8 @@
         <option value="$PROJECT_DIR$/Assets/Libraries/particles.js-master/demo/js/app.js" />
         <option value="$PROJECT_DIR$/error.css" />
         <option value="$PROJECT_DIR$/mobile.html" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -83,7 +84,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
@@ -189,6 +190,10 @@
       <workItem from="1562901214264" duration="2100000" />
       <workItem from="1563123764297" duration="10403000" />
       <workItem from="1563166570286" duration="79000" />
+      <workItem from="1563200178864" duration="794000" />
+      <workItem from="1563299955113" duration="3000" />
+      <workItem from="1563502050920" duration="146000" />
+      <workItem from="1563766576132" duration="1091000" />
     </task>
     <task id="LOCAL-00001" summary="added initial stylings for homepage">
       <created>1561690456610</created>
@@ -400,16 +405,24 @@
       <option name="project" value="LOCAL" />
       <updated>1563149644137</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="added stylings for aishik's computer">
+      <created>1563200385156</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1563200385156</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56891000" />
+    <option name="totallyTimeSpent" value="58925000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49898785" visible="true" weight="0.13258786" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49898785" visible="true" weight="0.1373802" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50101215" side_tool="true" weight="0.1315229" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -480,8 +493,8 @@
     <entry file="file://$PROJECT_DIR$/error.css" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        <state relative-caret-position="991">
+          <caret line="106" column="20" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="20" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -490,8 +503,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7200">
-          <caret line="480" column="15" selection-start-line="480" selection-start-column="15" selection-end-line="480" selection-end-column="15" />
+        <state relative-caret-position="360">
+          <caret line="212" column="25" selection-start-line="212" selection-start-column="25" selection-end-line="212" selection-end-column="25" />
         </state>
       </provider>
     </entry>
