@@ -36,7 +36,7 @@
     padding: 2px 2px 2px 2px;
     text-align: center;
     background: transparent;
-    top: 51%;
+    top: 49%;
     width: 70%;
     left: 15%;
     z-index: 999;
@@ -353,7 +353,7 @@
 
 .image-container {
     /*border-style: solid;*/
-    height: 50%;
+    height: 65%;
 }
 
 .image-container img {
