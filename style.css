@@ -30,6 +30,44 @@
     left: 100%;
 }
 
+/*icon bar for profiles*/
+.profile-menu {
+    top: 45vh;
+    position: absolute;
+    width: 100%;
+
+    /*border-style: solid;*/
+    position: absolute;
+    padding: 2px 2px 2px 2px;
+    background: transparent;
+}
+
+.profile-menu-area ul:nth-child(1) {
+    margin-left: 10%;
+}
+
+.profile-menu-area ul:nth-child(3) {
+    margin-right: 10%;
+}
+
+.profile-menu-area li {
+    display: inline-block;
+    list-style-type: none;
+    font-family: Montserrat;
+}
+
+.profile-menu-area li img {
+    width: 40px;
+    height: 40px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.profile-menu-area {
+
+}
+
+
 /*nav bar under title*/
 .nav1 {
     position: absolute;
@@ -349,7 +387,6 @@
     z-index: 0;
     border-color: transparent;
     height: calc(90% - 20px);
-    /*background-color: black;*/
 }
 
 .image-container {
@@ -373,13 +410,14 @@
     font-family: Montserrat;
 }
 
+
 .card {
     -webkit-border-radius: 30%;
     -moz-border-radius: 30%;
     border-radius: 30%;
     position: absolute;
     width: 33.33%;
-    height: 45%;
+    height: 50%;
 
     /*background-color: white;*/
 
