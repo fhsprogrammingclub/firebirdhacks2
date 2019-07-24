@@ -2,6 +2,44 @@
 <html lang="en">
 
 <script>
+    const map = new Map([[1, -1684677], [2, -1881541], [3, -2078406], [4, -2275015], [5, -2471880], [6, -2668744], [7, -2865609], [8, -3062474], [9, -3259339], [10, -3456204], [11, -3653068], [12, -3849933], [13, -4046798], [14, -4243663], [15, -4440527], [16, -4637392], [17, -4834257], [18, -5031122], [19, -5227987], [20, -5424851], [21, -5556180], [22, -5753045], [23, -5949910], [24, -6146774], [25, -6343639], [26, -6540504], [27, -6737369], [28, -6934234], [29, -7131098], [30, -7327963], [31, -7524828], [32, -7721693], [33, -7918557], [34, -8115422], [35, -8312287], [36, -8509152], [37, -8706017], [38, -8902881], [39, -9099746], [40, -9296611], [41, -9493476], [42, -9690340], [43, -9887205], [44, -10084070], [45, -10280935], [46, -10477800], [47, -10674664], [48, -10871529], [49, -11068394], [50, -11265259], [51, -11462123], [52, -11658988], [53, -11855853], [54, -12052718], [55, -12249583], [56, -12446447], [57, -12643312], [58, -12840177], [59, -13037042], [60, -13233906], [61, -13430771], [62, -13627636], [63, -13824501], [64, -14021366], [65, -14218230], [66, -14415095], [67, -14611960], [68, -14808825], [69, -15005689], [70, -15202554], [71, -15399163], [72, -15596028], [73, -15792893], [74, -15989757], [75, -16186622], [76, -16383487], [77, -16580352], ]);
+
+    //not the correct color -> rgb conversion
+    function toColor(num) {
+        // num >>>= 0;
+        // var b = num & 0xFF,
+        //     g = (num & 0xFF00) >>> 8,
+        //     r = (num & 0xFF0000) >>> 16,
+        //     a = ((num & 0xFF000000) >>> 24) / 255;
+        // return "rgba(" + [r, g, b].join(",") + ")";
+
+        return "#"+ ('000000' + ((num)>>>0).toString(16)).slice(-6);
+    }
+
+    window.addEventListener("scroll", function (event) {
+        // Get scroll position
+        var scroll = this.scrollY;
+        // Get possible scroll maximum
+        var maxscroll = document.documentElement.scrollHeight;
+        // Make percentage thing (so we get a number from 0 to 1)
+        var percentage = scroll / maxscroll;
+        // Set percentage as opacity of text
+
+        var img = new Image();
+        img.src = "gradient.png";
+
+        let list = document.getElementsByClassName("text");
+
+        for (var i = 0; i < list.length; i++) {
+            list[i].style.color = toColor(map.get(parseInt(percentage * 100 + 1)));
+            // console.log(toColor(map.get(parseInt(percentage * 100 + 1))));
+        }
+
+        document.getElementById("about-container").style.borderColor = toColor(map.get(parseInt(percentage * 100 + 1)));
+    });
+</script>
+
+<script>
     function scrollToFAQ() {
         document.getElementById("logo-section").scrollIntoView({
             behavior: "smooth"
@@ -48,7 +86,7 @@
 
 <div id="first-section">
     <div class="title-holder slideUp">
-        <p id="title">Firebird Hacks 2.0</p>
+        <p class="text" id="title">Firebird Hacks 2.0</p>
     </div>
 </div>
 
@@ -69,46 +107,50 @@
 
     <!--First row of faq-->
     <div class="faqcomponent first-row first-in-first-row" id="hackathon">
-        <h2>What is a hackathon?</h2>
-        <p>A hackathon is a coding marathon event where people design and implement solutions to problems, or create new
+        <h2 class="text">What is a hackathon?</h2>
+        <p class="text">A hackathon is a coding marathon event where people design and implement solutions to problems,
+            or create new
             and creative softwares.</p>
     </div>
 
 
     <div class="faqcomponent first-row" id="team">
-        <h2>Can I work in a team?</h2>
-        <p>Competitors are allowed to work individually or in teams of up to 4 people.</p>
+        <h2 class="text">Can I work in a team?</h2>
+        <p class="text">Competitors are allowed to work individually or in teams of up to 4 people.</p>
     </div>
 
     <div class="faqcomponent first-row" id="cost">
-        <h2>What do I need to pay for?</h2>
-        <p>FirebirdHacks is completely free of charge! All food, drinks, and swag are included as we want to create
+        <h2 class="text">What do I need to pay for?</h2>
+        <p class="text">FirebirdHacks is completely free of charge! All food, drinks, and swag are included as we want
+            to create
             the best possible environment for hackers.</p>
     </div>
 
     <div class="faqcomponent first-row last-in-first-row" id="description">
-        <h2>What is Firebird Hacks</h2>
-        <p>Firebird Hacks will be a fun way for hackers to get together and design innovative and useful solutions.
+        <h2 class="text">What is Firebird Hacks</h2>
+        <p class="text">Firebird Hacks will be a fun way for hackers to get together and design innovative and useful
+            solutions.
             Firebird Hacks, we will provide a learning environment for people of all experience levels to come and
             code!</p>
     </div>
 
     <!--second row-->
     <div class="faqcomponent second-row first-in-second-row" id="prerequisites">
-        <h2>Are there any required prerequisites?</h2>
-        <p>While at our hackathon, you must adhere to firebird hacks and mlh guidelines. Precoding is forbidden, and is
+        <h2 class="text">Are there any required prerequisites?</h2>
+        <p class="text">While at our hackathon, you must adhere to firebird hacks and mlh guidelines. Precoding is
+            forbidden, and is
             considered cheating. </p>
     </div>
 
     <div class="faqcomponent second-row" id="is-needed">
-        <h2>What will I need to bring?</h2>
-        <p>You will need a laptop, a valid student ID (or some sort of student ID), chargers, your phone, a
+        <h2 class="text">What will I need to bring?</h2>
+        <p class="text">You will need a laptop, a valid student ID (or some sort of student ID), chargers, your phone, a
             blanket/sleeping bag, toiletries, and any supplies you need for your hack.</p>
     </div>
 
     <div class="faqcomponent second-row last-in-second-row" id="experience">
-        <h2>Is experience needed?</h2>
-        <p>Not at all! In fact, Firebird hacks is a great way to begin your programming journey! A basic
+        <h2 class="text">Is experience needed?</h2>
+        <p class="text">Not at all! In fact, Firebird hacks is a great way to begin your programming journey! A basic
             understanding is recommended, but we will have workshops and mentors to help you make your project idea
             a reality.</p>
     </div>
@@ -121,10 +163,10 @@
 <div id="about">
     <div id="about-container">
         <div id="about-title-section">
-            <p id="about-title">About Firebird Hacks 2.0</p>
+            <p class="text" id="about-title">About Firebird Hacks 2.0</p>
         </div>
         <div id="about-paragraph">
-            <p id="about-description">
+            <p class="text" id="about-description">
                 Fremont High School's Second Annual Hackathon!
                 <br><br>
                 We bring together hundreds of high school students from across the Bay Area to work together and make
@@ -146,63 +188,63 @@
             <div class="image-container">
                 <img src="./Assets/hosts/neel.jpg">
             </div>
-            <h1>Roshan Prabhakar</h1>
-            <p><></p>
-            <p><></p>
+            <h1 class="text">Roshan Prabhakar</h1>
+            <p class="text"><></p>
+            <p class="text"><></p>
         </div>
 
         <div class="card" id="Neel">
             <div class="image-container">
                 <img src="./Assets/hosts/neel.jpg">
             </div>
-            <h1>Neel Kandlikar</h1>
-            <p><></p>
-            <p><></p>
+            <h1 class="text">Neel Kandlikar</h1>
+            <p class="text"><></p>
+            <p class="text"><></p>
         </div>
 
         <div class="card" id="David">
             <div class="image-container">
                 <img src="./Assets/hosts/neel.jpg">
             </div>
-            <h1>David Zhang</h1>
-            <p><></p>
-            <p><></p>
+            <h1 class="text">David Zhang</h1>
+            <p class="text"><></p>
+            <p class="text"><></p>
         </div>
 
         <div class="card" id="Kevin">
             <div class="image-container">
                 <img src="./Assets/hosts/neel.jpg">
             </div>
-            <h1>Kevin Wang</h1>
-            <p><></p>
-            <p><></p>
+            <h1 class="text">Kevin Wang</h1>
+            <p class="text"><></p>
+            <p class="text"><></p>
         </div>
 
         <div class="card" id="Dwijen">
             <div class="image-container">
                 <img src="./Assets/hosts/dwijen.jpg">
             </div>
-            <h1>Dwijen Chawra</h1>
-            <p><></p>
-            <p><></p>
+            <h1 class="text">Dwijen Chawra</h1>
+            <p class="text"><></p>
+            <p class="text"><></p>
         </div>
 
         <!--<div class="card" id="Peyton">-->
-            <!--<div class="image-container">-->
-                <!--<img src="./Assets/hosts/neel.jpg">-->
-            <!--</div>-->
-            <!--<h1>Peyton Carol</h1>-->
-            <!--<p>Sponsorship</p>-->
-            <!--<p>roshanprabhakar987@gmail.com</p>-->
+        <!--<div class="image-container">-->
+        <!--<img src="./Assets/hosts/neel.jpg">-->
+        <!--</div>-->
+        <!--<h1>Peyton Carol</h1>-->
+        <!--<p>Sponsorship</p>-->
+        <!--<p>roshanprabhakar987@gmail.com</p>-->
         <!--</div>-->
 
         <div class="card" id="Aishik">
             <div class="image-container">
                 <img src="./Assets/hosts/neel.jpg">
             </div>
-            <h1>Aishik Bhattacharyya</h1>
-            <p><></p>
-            <p><></p>
+            <h1 class="text">Aishik Bhattacharyya</h1>
+            <p class="text"><></p>
+            <p class="text"><></p>
         </div>
     </div>
 </div>
