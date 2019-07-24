@@ -17,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="37" column="87" selection-start-line="37" selection-start-column="87" selection-end-line="37" selection-end-column="87" />
+            <state relative-caret-position="566">
+              <caret line="243" column="22" selection-start-line="243" selection-start-column="22" selection-end-line="243" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -29,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="320" column="15" selection-start-line="320" selection-end-line="321" />
+            <state relative-caret-position="313">
+              <caret line="375" column="1" selection-start-line="375" selection-start-column="1" selection-end-line="375" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -196,7 +196,8 @@
       <workItem from="1563502050920" duration="146000" />
       <workItem from="1563766576132" duration="8842000" />
       <workItem from="1563923552697" duration="2425000" />
-      <workItem from="1563934387535" duration="8233000" />
+      <workItem from="1563934387535" duration="8278000" />
+      <workItem from="1563979846249" duration="1124000" />
     </task>
     <task id="LOCAL-00001" summary="added initial stylings for homepage">
       <created>1561690456610</created>
@@ -443,17 +444,24 @@
       <option name="project" value="LOCAL" />
       <updated>1563849820108</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="added text-color gradient javascript">
+      <created>1563949431870</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1563949431870</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77334000" />
+    <option name="totallyTimeSpent" value="78503000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49898785" visible="true" weight="0.13951011" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49898785" visible="true" weight="0.14057508" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50101215" side_tool="true" weight="0.1315229" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -478,7 +486,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added new particles" />
     <MESSAGE value="changed particles orientation" />
     <MESSAGE value="Added faq div" />
     <MESSAGE value="added content divs" />
@@ -503,7 +510,8 @@
     <MESSAGE value="added sponsorship prospectus, fixed about the team" />
     <MESSAGE value="adding sponsorship prospectus" />
     <MESSAGE value="changed position styles for about us" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed position styles for about us" />
+    <MESSAGE value="added text-color gradient javascript" />
+    <option name="LAST_COMMIT_MESSAGE" value="added text-color gradient javascript" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Libraries/particles.js-master/demo/js/lib/stats.js" />
@@ -525,20 +533,20 @@
     <entry file="file://$PROJECT_DIR$/gradient.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="320" column="15" selection-start-line="320" selection-end-line="321" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="37" column="87" selection-start-line="37" selection-start-column="87" selection-end-line="37" selection-end-column="87" />
+        <state relative-caret-position="566">
+          <caret line="243" column="22" selection-start-line="243" selection-start-column="22" selection-end-line="243" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="375" column="1" selection-start-line="375" selection-start-column="1" selection-end-line="375" selection-end-column="1" />
         </state>
       </provider>
     </entry>

@@ -20,9 +20,9 @@
     transition: ease-in-out 0.2s;
 }
 
-#title:hover {
-    color: #91010b;
-}
+/*#title:hover {*/
+    /*color: #91010b;*/
+/*}*/
 
 #title-holder {
     position: absolute;
@@ -380,6 +380,8 @@
     position: absolute;
     width: 33.33%;
     height: 45%;
+
+    /*background-color: white;*/
 
     /*border-style: solid;*/
 
