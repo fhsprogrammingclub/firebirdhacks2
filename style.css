@@ -2,7 +2,7 @@
 
 #first-section {
     position: absolute;
-    top: 30%;
+    top: 24%;
     left: 25%;
     width: 50%;
     text-align: center;
@@ -150,6 +150,7 @@
 
 .faqcomponent p {
     text-align: center;
+    font-size: 3vh;
     /*border-style: solid;*/
     font-family: Montserrat;
 }
@@ -159,7 +160,7 @@
     width: 25%;
     height: auto;
     /*max-height: 0;*/
-    padding: auto;
+    padding: 1%;
     /*padding-left: 1vw;*/
     /*padding-right: 1vw;*/
     /*padding-top: 1vh;*/
@@ -176,7 +177,7 @@
     /*border-width: 1px;*/
 }
 
-
+/* 
 .faqcomponent:hover {
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
@@ -184,7 +185,7 @@
     -o-transform: scale(1.05);
     transform: scale(1.05);
     z-index: 10;
-}
+} */
 
 /*for first row*/
 .first-row {
