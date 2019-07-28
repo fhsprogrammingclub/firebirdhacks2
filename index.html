@@ -1,47 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<script>
-    const map = new Map([[1, -1428957], [2, -2544096], [3, -3527906], [4, -4643045], [5, -5692391], [6, -6807530], [7, -7856876], [8, -8972015], [9, -10021361], [10, -11136500], [11, -12185845], [12, -13300984], [13, -14350330], [14, -15465469], [15, -16514815], [16, -15858942], [17, -14547195], [18, -13300984], [19, -11923445], [20, -10677234], [21, -9365487], [22, -8119277], [23, -6741737], [24, -5495783], [25, -4183779], [26, -2937569], [27, -1625565], [28, -1360859], [29, -1292249], [30, -1223639], [31, -1154773], [32, -1151699], [33, -1084367], [34, -1152712], [35, -1155263], [36, -1223608], [37, -1291696], [38, -1359785], [39, -1362336], [40, -2609063], [41, -3920815], [42, -5364153], [43, -6675905], [44, -8118986], [45, -9496274], [46, -10873819], [47, -12251363], [48, -13628909], [49, -15006197], [50, -16449278], [51, -15334141], [52, -13432057], [53, -11464436], [54, -9562352], [55, -7594475], [56, -5692391], [57, -3724514], [58, -1822686], [59, -1363421], [60, -1363421], [61, -1363421], [62, -1363421], [63, -1363421], [64, -1363421], [65, -1363421], [66, -2019295], [67, -3003104], [68, -4052707], [69, -5036517], [70, -6086120], [71, -7069674], [72, -8119277], [73, -9103087], [74, -10152689], [75, -11136499], [76, -12185846], [77, -13235192], ]);
+<!--DO NOT DELETE-->
+<!--<script>-->
+    <!--const map = new Map([[1, -335137], [2, -335394], [3, -335137], [4, -335138], [5, -335137], [6, -335394], [7, -335137], [8, -335138], [9, -335137], [10, -335394], [11, -335137], [12, -335138], [13, -335137], [14, -335394], [15, -335137], [16, -335138], [17, -335137], [18, -335394], [19, -335137], [20, -335138], [21, -335137], [22, -335394], [23, -335137], [24, -335138], [25, -335137], [26, -335394], [27, -335137], [28, -335138], [29, -335137], [30, -335394], [31, -335137], [32, -335138], [33, -335137], [34, -335394], [35, -335137], [36, -335138], [37, -335137], [38, -335394], [39, -335137], [40, -335138], [41, -335137], [42, -335394], [43, -335137], [44, -335138], [45, -335137], [46, -335394], [47, -335137], [48, -335138], [49, -335137], [50, -335394], [51, -335137], [52, -335138], [53, -335137], [54, -335394], [55, -335137], [56, -335138], [57, -335137], [58, -335394], [59, -335137], [60, -1124396], [61, -1913654], [62, -2702914], [63, -3491916], [64, -4281431], [65, -5070434], [66, -5925485], [67, -6648951], [68, -7503746], [69, -8227469], [70, -9082264], [71, -9871522], [72, -10660781], [73, -11450040], [74, -12239299], [75, -13028301], [76, -13883352], [77, -14606819], ]);-->
 
+    <!--//not the correct color -> rgb conversion-->
+    <!--function toColor(num) {-->
+        <!--// num >>>= 0;-->
+        <!--// var b = num & 0xFF,-->
+        <!--//     g = (num & 0xFF00) >>> 8,-->
+        <!--//     r = (num & 0xFF0000) >>> 16,-->
+        <!--//     a = ((num & 0xFF000000) >>> 24) / 255;-->
+        <!--// return "rgba(" + [r, g, b].join(",") + ")";-->
+        <!--return "#" + ('000000' + ((num) >>> 0).toString(16)).slice(-6);-->
+    <!--}-->
+    <!--window.addEventListener("scroll", function (event) {-->
+        <!--// Get scroll position-->
+        <!--var scroll = this.scrollY;-->
+        <!--// Get possible scroll maximum-->
+        <!--var maxscroll = document.documentElement.scrollHeight;-->
+        <!--// Make percentage thing (so we get a number from 0 to 1)-->
+        <!--var percentage = scroll / maxscroll;-->
+        <!--// Set percentage as opacity of text-->
+        <!--var img = new Image();-->
+        <!--img.src = "gradient.png";-->
+        <!--let list = document.getElementsByClassName("team-text");-->
+        <!--for (var i = 0; i < list.length; i++) {-->
+            <!--list[i].style.color = toColor(map.get(parseInt(percentage * 100 + 1)));-->
+            <!--// console.log(toColor(map.get(parseInt(percentage * 100 + 1))));-->
+        <!--}-->
 
+        <!--list = document.getElementsByClassName("fa-linkedin");-->
+        <!--for (var i = 0; i < list.length; i++) {-->
+            <!--list[i].style.color = toColor(map.get(parseInt(percentage * 100 + 1)));-->
+            <!--// console.log(toColor(map.get(parseInt(percentage * 100 + 1))));-->
+        <!--}-->
 
-    //not the correct color -> rgb conversion
-    function toColor(num) {
-        // num >>>= 0;
-        // var b = num & 0xFF,
-        //     g = (num & 0xFF00) >>> 8,
-        //     r = (num & 0xFF0000) >>> 16,
-        //     a = ((num & 0xFF000000) >>> 24) / 255;
-        // return "rgba(" + [r, g, b].join(",") + ")";
+        <!--list = document.getElementsByClassName("fa-github");-->
+        <!--for (var i = 0; i < list.length; i++) {-->
+            <!--list[i].style.color = toColor(map.get(parseInt(percentage * 100 + 1)));-->
+            <!--// console.log(toColor(map.get(parseInt(percentage * 100 + 1))));-->
+        <!--}-->
 
-        return "#" + ('000000' + ((num) >>> 0).toString(16)).slice(-6);
-    }
+        <!--list = document.getElementsByClassName("fa-envelope");-->
+        <!--for (var i = 0; i < list.length; i++) {-->
+            <!--list[i].style.color = toColor(map.get(parseInt(percentage * 100 + 1)));-->
+            <!--// console.log(toColor(map.get(parseInt(percentage * 100 + 1))));-->
+        <!--}-->
 
-    window.addEventListener("scroll", function (event) {
-        // Get scroll position
-        var scroll = this.scrollY;
-        // Get possible scroll maximum
-        var maxscroll = document.documentElement.scrollHeight;
-        // Make percentage thing (so we get a number from 0 to 1)
-        var percentage = scroll / maxscroll;
-        // Set percentage as opacity of text
+        <!--list = document.getElementsByClassName("team-images");-->
+        <!--for (var i = 0; i < list.length; i++) {-->
+            <!--list[i].style.opacity = percentage * (100 / 77);-->
+            <!--// console.log(toColor(map.get(parseInt(percentage * 100 + 1))));-->
+        <!--}-->
 
-        var img = new Image();
-        img.src = "gradient.png";
-
-        let list = document.getElementsByClassName("text");
-
-        for (var i = 0; i < list.length; i++) {
-            list[i].style.color = toColor(map.get(parseInt(percentage * 100 + 1)));
-            // console.log(toColor(map.get(parseInt(percentage * 100 + 1))));
-        }
-
-        document.getElementById("about-container").style.borderColor = toColor(map.get(parseInt(percentage * 100 + 1)));
-        // document.getElementById("logo-section").style.backgroundColor = toColor(map.get(parseInt(percentage * 100 + 1)));
-        document.getElementsByClassName("card").style.backgroundColor = toColor(map.get(parseInt(percentage * 100 + 1)));
-    });
-</script>
+        <!--// document.getElementById("about-container").style.borderColor = toColor(map.get(parseInt(percentage * 100 + 1)));-->
+        <!--// document.getElementById("logo-section").style.backgroundColor = toColor(map.get(parseInt(percentage * 100 + 1)));-->
+        <!--// document.getElementsByClassName("card").style.backgroundColor = toColor(map.get(parseInt(percentage * 100 + 1)));-->
+    <!--});-->
+<!--</script>-->
 
 <script>
     function scrollToFAQ() {
@@ -63,7 +81,6 @@
     }
 
     function loadMobileIfNeeded() {
-
         if (window.innerHeight >= window.innerWidth) {
             location.replace("https://fhsprogrammingclub.github.io/redirect/")
         }
@@ -117,10 +134,10 @@
     <div class="first-row flex-container">
         <div class="faqcomponent first-in-first-row" id="hackathon">
             <div class="faqcontainer">
-            <h2 class="text">What is a hackathon?</h2>
-            <p class="text">A hackathon is a coding marathon event where people design and implement solutions to
-                problems, or create new
-                and creative softwares.</p>
+                <h2 class="text">What is a hackathon?</h2>
+                <p class="text">A hackathon is a coding marathon event where people design and implement solutions to
+                    problems, or create new
+                    and creative softwares.</p>
             </div>
         </div>
 
@@ -200,113 +217,199 @@
     <div id="team-section">
         <div class="card" id="roshan">
             <div class="image-container">
-                <img src="./Assets/hosts/neel.jpg" id="generic-image">
+                <img src="./Assets/hosts/neel.jpg" class="team-images">
             </div>
-            <nav class="content"><h1>Roshan Prabhakar</h1>
-                <nav class="profile-menu">
-                    <div class="profile-menu-area">
-                        <ul>
-                            <li class="profile-image"><img src="github.png"></li>
-                            <li class="profile-image"><img src="email.png"></li>
-                            <li class="profile-image"><img src="linkedin.png"></li>
-                        </ul>
-                    </div>
-                </nav>
+            <h1 class="team-text">Roshan Prabhakar</h1>
+            <nav class="profile-menu">
+                <!--<ul>-->
+                    <!--<li class="profile-image">-->
+                    <!--<i class="fa fab fa-github" aria-hidden="true"></i>-->
+                    <!--</li>-->
+                    <!--<li class="profile-image">-->
+                    <!--<i class="fa fas fa-envelope" aria-hidden="true"></i>-->
+                    <!--</li>-->
+                    <!--<li class="profile-image">-->
+                    <!--<i class="fa fab fa-linkedin" aria-hidden="true"></i>-->
+                    <!--</li>-->
+
+                    <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-github fa-xs"></i>
+                        </span>
+
+                    <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fas fa-envelope fa-xs"></i>
+                        </span>
+
+                    <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-linkedin fa-xs"></i>
+                        </span>
+
+
+                <!--</ul>-->
             </nav>
         </div>
 
         <div class="card" id="Neel">
             <div class="image-container">
-                <img src="./Assets/hosts/neel.jpg">
+                <img src="./Assets/hosts/neel.jpg" class="team-images">
             </div>
-            <h1>Neel Kandlikar</h1>
+            <h1 class="team-text">Neel Kandlikar</h1>
             <nav class="profile-menu">
-                <div class="profile-menu-area">
-                    <ul>
-                        <li class="profile-image"><img src="github.png"></li>
-                        <li class="profile-image"><img src="email.png"></li>
-                        <li class="profile-image"><img src="linkedin.png"></li>
-                    </ul>
-                </div>
+                <!--<div class="profile-menu-area">-->
+                <!--<ul>-->
+                    <!--<li class="profile-image">-->
+                    <!--<i class="fa fab fa-github" aria-hidden="true"></i>-->
+                    <!--</li>-->
+                    <!--<li class="profile-image">-->
+                    <!--<i class="fa fas fa-envelope" aria-hidden="true"></i>-->
+                    <!--</li>-->
+                    <!--<li class="profile-image">-->
+                    <!--<i class="fa fab fa-linkedin" aria-hidden="true"></i>-->
+                    <!--</li>-->
+
+                    <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-github fa-xs"></i>
+                        </span>
+
+                    <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fas fa-envelope fa-xs"></i>
+                        </span>
+
+                    <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-linkedin fa-xs"></i>
+                        </span>
+
+
+                <!--</ul>-->
+                <!--</div>-->
             </nav>
         </div>
 
         <div class="card" id="David">
             <div class="image-container">
-                <img src="./Assets/hosts/neel.jpg">
+                <img src="./Assets/hosts/neel.jpg" class="team-images">
             </div>
-            <h1>David Zhang</h1>
+            <h1 class="team-text">David Zhang</h1>
             <nav class="profile-menu">
-                <div class="profile-menu-area">
-                    <ul>
-                        <li class="profile-image"><img src="github.png"></li>
-                        <li class="profile-image"><img src="email.png"></li>
-                        <li class="profile-image"><img src="linkedin.png"></li>
-                    </ul>
-                </div>
+                <!--<div class="profile-menu-area">-->
+                <!--<ul>-->
+                    <!--<li class="profile-image">-->
+                    <!--<i class="fa fab fa-github" aria-hidden="true"></i>-->
+                    <!--</li>-->
+                    <!--<li class="profile-image">-->
+                    <!--<i class="fa fas fa-envelope" aria-hidden="true"></i>-->
+                    <!--</li>-->
+                    <!--<li class="profile-image">-->
+                    <!--<i class="fa fab fa-linkedin" aria-hidden="true"></i>-->
+                    <!--</li>-->
+
+                    <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-github fa-xs"></i>
+                        </span>
+
+                    <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fas fa-envelope fa-xs"></i>
+                        </span>
+
+                    <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-linkedin fa-xs"></i>
+                        </span>
+
+
+                <!--</ul>-->
+                <!--</div>-->
             </nav>
         </div>
 
         <div class="card" id="Kevin">
             <div class="image-container">
-                <img src="./Assets/hosts/neel.jpg">
+                <img src="./Assets/hosts/neel.jpg" class="team-images">
             </div>
-            <h1>Kevin Wang</h1>
+            <h1 class="team-text">Kevin Wang</h1>
             <nav class="profile-menu">
-                <div class="profile-menu-area">
-                    <ul>
-                        <li class="profile-image"><img src="github.png"></li>
-                        <li class="profile-image"><img src="email.png"></li>
-                        <li class="profile-image"><img src="linkedin.png"></li>
-                    </ul>
-                </div>
+                <!--<div class="profile-menu-area">-->
+                <!--<ul>-->
+                    <!--<li class="profile-image">-->
+                    <!--<i class="fa fab fa-github" aria-hidden="true"></i>-->
+                    <!--</li>-->
+                    <!--<li class="profile-image">-->
+                    <!--<i class="fa fas fa-envelope" aria-hidden="true"></i>-->
+                    <!--</li>-->
+                    <!--<li class="profile-image">-->
+                    <!--<i class="fa fab fa-linkedin" aria-hidden="true"></i>-->
+                    <!--</li>-->
+
+                    <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-github fa-xs"></i>
+                        </span>
+
+                    <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fas fa-envelope fa-xs"></i>
+                        </span>
+
+                    <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-linkedin fa-xs"></i>
+                        </span>
+
+
+                <!--</ul>-->
+                <!--</div>-->
             </nav>
         </div>
 
         <div class="card" id="Dwijen">
             <div class="image-container">
-                <img src="./Assets/hosts/dwijen.jpg">
+                <img src="./Assets/hosts/dwijen.jpg" class="team-images">
             </div>
-            <h1>Dwijen Chawra</h1>
+            <h1 class="team-text">Dwijen Chawra</h1>
             <nav class="profile-menu">
-                <div class="profile-menu-area">
-                    <ul>
-                        <li class="profile-image">
-                            <i class="fa fab fa-github" aria-hidden="true"></i>
-                        </li>
-                        <li class="profile-image">
-                            <i class="fa fas fa-envelope" aria-hidden="true"></i>
-                        </li>
-                        <li class="profile-image">
-                            <i class="fa fab fa-linkedin" aria-hidden="true"></i>
-                        </li>
-                    </ul>
-                </div>
+                <!--<div class="profile-menu-area">-->
+                <!--<ul>-->
+                    <!--<li class="profile-image">-->
+                    <!--<i class="fa fab fa-github" aria-hidden="true"></i>-->
+                    <!--</li>-->
+                    <!--<li class="profile-image">-->
+                    <!--<i class="fa fas fa-envelope" aria-hidden="true"></i>-->
+                    <!--</li>-->
+                    <!--<li class="profile-image">-->
+                    <!--<i class="fa fab fa-linkedin" aria-hidden="true"></i>-->
+                    <!--</li>-->
+
+                    <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-github fa-xs"></i>
+                        </span>
+
+                    <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fas fa-envelope fa-xs"></i>
+                        </span>
+
+                    <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-linkedin fa-xs"></i>
+                        </span>
+
+
+                <!--</ul>-->
+                <!--</div>-->
             </nav>
         </div>
 
-        <!--<div class="card" id="Peyton">-->
-        <!--<div class="image-container">-->
-        <!--<img src="./Assets/hosts/neel.jpg">-->
-        <!--</div>-->
-        <!--<h1>Peyton Carol</h1>-->
-        <!--<p>Sponsorship</p>-->
-        <!--<p>roshanprabhakar987@gmail.com</p>-->
-        <!--</div>-->
-
         <div class="card" id="Aishik">
             <div class="image-container">
-                <img src="./Assets/hosts/neel.jpg">
+                <img src="./Assets/hosts/neel.jpg" class="team-images">
             </div>
-            <h1>Aishik Bhattacharyya</h1>
+            <h1 class="team-text">Aishik Bhattacharyya</h1>
             <nav class="profile-menu">
-                <div class="profile-menu-area">
-                    <ul>
-                        <li class="profile-image"><img src="github.png"></li>
-                        <li class="profile-image"><img src="email.png"></li>
-                        <li class="profile-image"><img src="linkedin.png"></li>
-                    </ul>
-                </div>
+                    <span style="font-size: 3em; color: BLACK;" class="icon-container" onclick="openAishikGithub()")>
+                          <i class="fa fab fa-github fa-xs"></i>
+                     </span>
+
+                <span style="font-size: 3em; color: BLACK;" class="icon-container" >
+                          <i class="fa fas fa-envelope fa-xs"></i>
+                    </span>
+
+                <span style="font-size: 3em; color: BLACK;" class="icon-container">
+                          <i class="fa fab fa-linkedin fa-xs"></i>
+                    </span>
             </nav>
         </div>
     </div>
@@ -321,3 +424,12 @@
 
 </body>
 </html>
+
+<script>
+    function openGithub(var person) {
+        if (person == 1) {
+
+        } else 5
+
+    }
+</script>
