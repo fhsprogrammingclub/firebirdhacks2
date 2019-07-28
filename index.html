@@ -2,7 +2,7 @@
 <html lang="en">
 
 <script>
-    const map = new Map([[1, -59361], [2, -57820], [3, -56534], [4, -54993], [5, -53451], [6, -182982], [7, -312512], [8, -376506], [9, -506037], [10, -635567], [11, -765098], [12, -1552044], [13, -2667698], [14, -3717816], [15, -4833470], [16, -5949124], [17, -7064778], [18, -8180176], [19, -9295831], [20, -10411485], [21, -11527139], [22, -12642793], [23, -13758447], [24, -14874101], [25, -15989756], [26, -16318463], [27, -14810877], [28, -13303546], [29, -11861752], [30, -10354165], [31, -8912371], [32, -7405040], [33, -5897454], [34, -4455660], [35, -2948329], [36, -1506279], [37, -64484], [38, -64981], [39, -65473], [40, -65452], [41, -65432], [42, -130947], [43, -261998], [44, -393050], [45, -524101], [46, -655153], [47, -786204], [48, -917255], [49, -786201], [50, -655149], [51, -523073], [52, -454485], [53, -320105], [54, -185981], [55, -51601], [56, -48549], [57, -45242], [58, -42190], [59, -38621], [60, -33754], [61, -28631], [62, -23765], [63, -18642], [64, -13775], [65, -8652], [66, -3785], [67, -262344], [68, -1644236], [69, -3025872], [70, -4407508], [71, -5789400], [72, -7171036], [73, -8552672], [74, -9934564], [75, -11316200], [76, -12697836], [77, -14079728], ]);
+    const map = new Map([[1, -1428957], [2, -2544096], [3, -3527906], [4, -4643045], [5, -5692391], [6, -6807530], [7, -7856876], [8, -8972015], [9, -10021361], [10, -11136500], [11, -12185845], [12, -13300984], [13, -14350330], [14, -15465469], [15, -16514815], [16, -15858942], [17, -14547195], [18, -13300984], [19, -11923445], [20, -10677234], [21, -9365487], [22, -8119277], [23, -6741737], [24, -5495783], [25, -4183779], [26, -2937569], [27, -1625565], [28, -1360859], [29, -1292249], [30, -1223639], [31, -1154773], [32, -1151699], [33, -1084367], [34, -1152712], [35, -1155263], [36, -1223608], [37, -1291696], [38, -1359785], [39, -1362336], [40, -2609063], [41, -3920815], [42, -5364153], [43, -6675905], [44, -8118986], [45, -9496274], [46, -10873819], [47, -12251363], [48, -13628909], [49, -15006197], [50, -16449278], [51, -15334141], [52, -13432057], [53, -11464436], [54, -9562352], [55, -7594475], [56, -5692391], [57, -3724514], [58, -1822686], [59, -1363421], [60, -1363421], [61, -1363421], [62, -1363421], [63, -1363421], [64, -1363421], [65, -1363421], [66, -2019295], [67, -3003104], [68, -4052707], [69, -5036517], [70, -6086120], [71, -7069674], [72, -8119277], [73, -9103087], [74, -10152689], [75, -11136499], [76, -12185846], [77, -13235192], ]);
 
 
 
@@ -15,7 +15,7 @@
         //     a = ((num & 0xFF000000) >>> 24) / 255;
         // return "rgba(" + [r, g, b].join(",") + ")";
 
-        return "#"+ ('000000' + ((num)>>>0).toString(16)).slice(-6);
+        return "#" + ('000000' + ((num) >>> 0).toString(16)).slice(-6);
     }
 
     window.addEventListener("scroll", function (event) {
@@ -72,6 +72,11 @@
     function openSponsorshipProspectus() {
         window.open("Sponsorship Prospectus.pdf")
     }
+
+    function loadPage() {
+        loadMobileIfNeeded();
+        document.getElementsByClassName("image-container").style.height = document.getElementById("generic-image").clientHeight;
+    }
 </script>
 
 <head>
@@ -82,7 +87,7 @@
     <meta charset="UTF-8">
     <title>Firebird Hacks 2.0</title>
 </head>
-<body onload="loadMobileIfNeeded()">
+<body onload="loadPage()">
 
 <div id="particles-js" style="z-index: 9999"></div>
 <script src="./Assets/Libraries/particles.js-master/particles.js"></script>
@@ -104,59 +109,66 @@
         </ul>
     </div>
 </nav>
-
 <div id="logo-section">
 
     <img src="Assets/logo.png" id="logo-img">
 
     <!--First row of faq-->
-    <div class="faqcomponent first-row first-in-first-row" id="hackathon">
-        <h2 class="text">What is a hackathon?</h2>
-        <p class="text">A hackathon is a coding marathon event where people design and implement solutions to problems,
-            or create new
-            and creative softwares.</p>
-    </div>
+    <div class="first-row flex-container">
+        <div class="faqcomponent first-in-first-row" id="hackathon">
+            <div class="faqcontainer">
+            <h2 class="text">What is a hackathon?</h2>
+            <p class="text">A hackathon is a coding marathon event where people design and implement solutions to
+                problems, or create new
+                and creative softwares.</p>
+            </div>
+        </div>
 
 
-    <div class="faqcomponent first-row" id="team">
-        <h2 class="text">Can I work in a team?</h2>
-        <p class="text">Competitors are allowed to work individually or in teams of up to 4 people.</p>
-    </div>
+        <div class="faqcomponent" id="team">
+            <h2 class="text">Can I work in a team?</h2>
+            <p class="text">Competitors are allowed to work individually or in teams of up to 4 people.</p>
+        </div>
 
-    <div class="faqcomponent first-row" id="cost">
-        <h2 class="text">What do I need to pay for?</h2>
-        <p class="text">FirebirdHacks is completely free of charge! All food, drinks, and swag are included as we want
-            to create
-            the best possible environment for hackers.</p>
-    </div>
+        <div class="faqcomponent" id="cost">
+            <h2 class="text">What do I need to pay for?</h2>
+            <p class="text">FirebirdHacks is completely free of charge! All food, drinks, and swag are included as we
+                want to create
+                the best possible environment for hackers.</p>
+        </div>
 
-    <div class="faqcomponent first-row last-in-first-row" id="description">
-        <h2 class="text">What is Firebird Hacks</h2>
-        <p class="text">Firebird Hacks will be a fun way for hackers to get together and design innovative and useful
-            solutions.
-            Firebird Hacks, we will provide a learning environment for people of all experience levels to come and
-            code!</p>
+        <div class="faqcomponent last-in-first-row" id="description">
+            <h2 class="text">What is Firebird Hacks</h2>
+            <p class="text">Firebird Hacks will be a fun way for hackers to get together and design innovative and
+                useful solutions.
+                Firebird Hacks, we will provide a learning environment for people of all experience levels to come and
+                code!</p>
+        </div>
     </div>
 
     <!--second row-->
-    <div class="faqcomponent second-row first-in-second-row" id="prerequisites">
-        <h2 class="text">Are there any required prerequisites?</h2>
-        <p class="text">While at our hackathon, you must adhere to firebird hacks and mlh guidelines. Precoding is
-            forbidden, and is
-            considered cheating. </p>
-    </div>
+    <div class="second-row flex-container">
+        <div class="faqcomponent first-in-second-row" id="prerequisites">
+            <h2 class="text">Are there any required prerequisites?</h2>
+            <p class="text">While at our hackathon, you must adhere to firebird hacks and mlh guidelines. Precoding is
+                forbidden, and is
+                considered cheating. </p>
+        </div>
 
-    <div class="faqcomponent second-row" id="is-needed">
-        <h2 class="text">What will I need to bring?</h2>
-        <p class="text">You will need a laptop, a valid student ID (or some sort of student ID), chargers, your phone, a
-            blanket/sleeping bag, toiletries, and any supplies you need for your hack.</p>
-    </div>
+        <div class="faqcomponent" id="is-needed">
+            <h2 class="text">What will I need to bring?</h2>
+            <p class="text">You will need a laptop, a valid student ID (or some sort of student ID), chargers, your
+                phone, a
+                blanket/sleeping bag, toiletries, and any supplies you need for your hack.</p>
+        </div>
 
-    <div class="faqcomponent second-row last-in-second-row" id="experience">
-        <h2 class="text">Is experience needed?</h2>
-        <p class="text">Not at all! In fact, Firebird hacks is a great way to begin your programming journey! A basic
-            understanding is recommended, but we will have workshops and mentors to help you make your project idea
-            a reality.</p>
+        <div class="faqcomponent last-in-second-row" id="experience">
+            <h2 class="text">Is experience needed?</h2>
+            <p class="text">Not at all! In fact, Firebird hacks is a great way to begin your programming journey! A
+                basic
+                understanding is recommended, but we will have workshops and mentors to help you make your project idea
+                a reality.</p>
+        </div>
     </div>
 
     <!--<div class="faqcomponent" id="filler"></div>-->
@@ -184,22 +196,22 @@
     </div>
 </div>
 
-<!--Team section, spliced from losaltoshacks.com-->
 <div id="team-container">
     <div id="team-section">
         <div class="card" id="roshan">
             <div class="image-container">
-                <img src="./Assets/hosts/neel.jpg">
+                <img src="./Assets/hosts/neel.jpg" id="generic-image">
             </div>
-            <h1>Roshan Prabhakar</h1>
-            <nav class="profile-menu">
-                <div class="profile-menu-area">
-                    <ul>
-                        <li class="profile-image"><img src="github.png"></li>
-                        <li class="profile-image"><img src="email.png"></li>
-                        <li class="profile-image"><img src="linkedin.png"></li>
-                    </ul>
-                </div>
+            <nav class="content"><h1>Roshan Prabhakar</h1>
+                <nav class="profile-menu">
+                    <div class="profile-menu-area">
+                        <ul>
+                            <li class="profile-image"><img src="github.png"></li>
+                            <li class="profile-image"><img src="email.png"></li>
+                            <li class="profile-image"><img src="linkedin.png"></li>
+                        </ul>
+                    </div>
+                </nav>
             </nav>
         </div>
 

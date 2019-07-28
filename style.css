@@ -30,42 +30,6 @@
     left: 100%;
 }
 
-/*icon bar for profiles*/
-.profile-menu {
-    top: 45vh;
-    position: absolute;
-    width: 100%;
-
-    /*border-style: solid;*/
-    padding: 2px 2px 2px 2px;
-    background: transparent;
-}
-
-.profile-menu-area {
-    position: absolute;
-    /*border-style: solid;*/
-    width: 68%;
-    left: calc((100% - 68%) / 2);
-}
-
-.profile-menu-area li {
-    display: inline-block;
-    list-style-type: none;
-}
-
-.profile-menu-area li img {
-    width: 40px;
-    height: 40px;
-    margin-left: 1vw;
-    margin-right: 1vw;
-}
-
-.profile-menu-area ul {
-    /*border-style: solid;*/
-    align-items: center;
-}
-
-
 /*nav bar under title*/
 .nav1 {
     position: absolute;
@@ -141,25 +105,25 @@
 #logo-section {
     position: absolute;
     top: 100%;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
     background-color: #e8e8e8;
 }
 
 #logo-img {
     position: absolute;
     opacity: 0.4;
-
-    height: 60%;
-
-    left: 49%;
-    margin-left: -15%;
-
+    width: 40%;
+    left: 30%;
     top: 50%;
-    margin-top: -15%;
-}
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 
-#particles-js {
+
 }
 
 #faq {
@@ -171,6 +135,14 @@
     left: 30%;
 }
 
+.faqcontainer {
+    /*border-style: solid;*/
+    width: 100%;
+    /*height: 100%;*/
+    margin-bottom: auto;
+    min-height: 0;
+}
+
 .faqcomponent h2 {
     font-family: Montserrat;
     text-align: center;
@@ -178,19 +150,23 @@
 
 .faqcomponent p {
     text-align: center;
+    /*border-style: solid;*/
     font-family: Montserrat;
 }
 
 /*changed % to rem*/
 .faqcomponent {
-    width: 20vw;
-    height: 28vh;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+    width: 25%;
+    height: auto;
+    /*max-height: 0;*/
+    padding: auto;
+    /*padding-left: 1vw;*/
+    /*padding-right: 1vw;*/
+    /*padding-top: 1vh;*/
+    /*padding-bottom: 1vh;*/
     background: #ffe1de;
     opacity: 0.8;
+
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
@@ -212,73 +188,34 @@
 
 /*for first row*/
 .first-row {
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
     top: 20vh;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    width: 100%;
+    height: 50%;
 }
 
-.first-in-first-row {
-    padding-left: 4vw;
-}
-
-.last-in-first-row {
-    padding-right: 4vw;
-}
-
-#hackathon {
-    position: absolute;
-    left: 0;
-}
-
-#team {
-    position: absolute;
-    left: 26vw;
-}
-
-#cost {
-    position: absolute;
-    left: 50vw;
-}
-
-#description {
-    position: absolute;
-    left: 74vw;
-}
 
 /*for second row*/
 
 .second-row {
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    height: 50%;
     top: calc(50vh - 1px);
-    padding-left: 5vw;
-    padding-right: 5vw;
 }
 
-.first-in-second-row {
-    padding-left: 10vw;
-}
-
-.last-in-second-row {
-    padding-right: 10vw;
-}
-
-#prerequisites {
-}
-
-#is-needed {
-    left: 35vw;
-}
-
-#experience {
-    left: 65vw;
+.second-row div {
+    width: 33%;
 }
 
 #filler {
     border-style: solid;
     border-width: 1px;
 }
-
 /*end % --> rem*/
 
 /*about page*/
@@ -365,6 +302,116 @@
 
 /*The team section*/
 
+/*#team-container {*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 300%;*/
+    /*height: 130%;*/
+    /*width: 100%;*/
+    /*background-color: #ffe1de;*/
+    /*!*background-color: black;*!*/
+/*}*/
+
+/*#team-section {*/
+    /*position: absolute;*/
+    /*border-style: solid;*/
+    /*border-width: 10px;*/
+    /*top: 5%;*/
+    /*width: 80%;*/
+    /*left: 10%;*/
+    /*z-index: 0;*/
+    /*border-color: transparent;*/
+    /*height: calc(90% - 20px);*/
+/*}*/
+
+/*.image-container {*/
+    /*!*border-style: solid;*!*/
+    /*height: 65%;*/
+/*}*/
+
+/*.image-container img {*/
+    /*position: absolute;*/
+    /*top: 5%;*/
+    /*width: 50%;*/
+    /*left: 25%;*/
+    /*-webkit-border-radius: 30%;*/
+    /*-moz-border-radius: 30%;*/
+    /*border-radius: 30%;*/
+    /*!*border-style: solid;*!*/
+/*}*/
+
+/*.card h1, p {*/
+    /*text-align: center;*/
+    /*font-family: Montserrat;*/
+/*}*/
+
+
+/*.card {*/
+    /*-webkit-border-radius: 30%;*/
+    /*-moz-border-radius: 30%;*/
+    /*border-radius: 30%;*/
+    /*position: absolute;*/
+    /*width: 33.33%;*/
+    /*height: 50%;*/
+
+    /*!*background-color: white;*!*/
+
+    /*!*border-style: solid;*!*/
+
+    /*-webkit-transition: ease-in-out 0.2s;*/
+    /*-moz-transition: ease-in-out 0.2s;*/
+    /*-ms-transition: ease-in-out 0.2s;*/
+    /*-o-transition: ease-in-out 0.2s;*/
+    /*transition: ease-in-out 0.2s;*/
+/*}*/
+
+/*.card:hover {*/
+    /*box-shadow: 10px 10px 10px 10px #888888;*/
+    /*cursor: pointer;*/
+/*}*/
+
+/*#Roshan {*/
+    /*top: 100%;*/
+    /*left: 0;*/
+/*}*/
+
+/*#Neel {*/
+    /*top: 0;*/
+    /*left: 33.33%;*/
+/*}*/
+
+/*#Kevin {*/
+    /*top: 51%;*/
+    /*left: 0;*/
+/*}*/
+
+/*#David {*/
+    /*top: 0;*/
+    /*left: 66.66%;*/
+/*}*/
+
+/*#Aishik {*/
+    /*top: 51%;*/
+    /*left: 66.66%;*/
+/*}*/
+
+/*#Peyton {*/
+    /*top: calc(51 * 2%);*/
+    /*left: 33.33%;*/
+/*}*/
+
+/*#Dwijen {*/
+    /*top: 51%;*/
+    /*left: 33.33%;*/
+/*}*/
+
+/*#sponsor {*/
+    /*position: absolute;*/
+    /*top: 400%;*/
+/*}*/
+
+
+
 #team-container {
     position: absolute;
     left: 0;
@@ -385,18 +432,20 @@
     z-index: 0;
     border-color: transparent;
     height: calc(90% - 20px);
+    /*background-color: black;*/
 }
 
 .image-container {
-    /*border-style: solid;*/
-    height: 65%;
+    border-style: solid;
+    /*height: 65%;*/
 }
 
 .image-container img {
     position: absolute;
-    top: 5%;
-    width: 50%;
     left: 25%;
+    float: left;
+    width: 50%;
+
     -webkit-border-radius: 30%;
     -moz-border-radius: 30%;
     border-radius: 30%;
@@ -408,6 +457,11 @@
     font-family: Montserrat;
 }
 
+.content h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: Montserrat;
+}
 
 .card {
     -webkit-border-radius: 30%;
@@ -415,9 +469,7 @@
     border-radius: 30%;
     position: absolute;
     width: 33.33%;
-    height: 50%;
-
-    /*background-color: white;*/
+    height: 45%;
 
     /*border-style: solid;*/
 
@@ -472,6 +524,47 @@
     position: absolute;
     top: 400%;
 }
+
+
+/*icon bar for profiles*/
+.profile-menu {
+    top: 45vh;
+    position: absolute;
+    width: 100%;
+
+    /*border-style: solid;*/
+    padding: 2px 2px 2px 2px;
+    background: transparent;
+}
+
+.profile-menu-area {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    /*border-style: solid;*/
+    width: 68%;
+    /*left: calc((100% - 68%) / 2);*/
+}
+
+.profile-menu-area li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.profile-menu-area li img {
+    width: 40px;
+    height: 40px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.profile-menu-area ul {
+    /*border-style: solid;*/
+    align-items: center;
+}
+
+
+
 
 /*@media (min-width: 1680px) {*/
     /*.second-row {*/
