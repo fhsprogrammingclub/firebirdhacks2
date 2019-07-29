@@ -20,9 +20,9 @@
     transition: ease-in-out 0.2s;
 }
 
-/*#title:hover {*/
-/*color: #91010b;*/
-/*}*/
+#title:hover {
+    color: #91010b;
+}
 
 #title-holder {
     position: absolute;
@@ -146,11 +146,12 @@
 .faqcomponent h2 {
     font-family: Montserrat;
     text-align: center;
+    font-size: 3vh;
 }
 
 .faqcomponent p {
     text-align: center;
-    font-size: 2.75vh;
+    font-size: 2.7vh;
     /*border-style: solid;*/
     font-family: Montserrat;
 }
@@ -217,7 +218,6 @@
     border-style: solid;
     border-width: 1px;
 }
-/*end % --> rem*/
 
 /*about page*/
 #about {
@@ -308,125 +308,6 @@
     /*transition: ease-in-out 0.2s;*/
 }
 
-/*#about-container:hover {*/
-    /*width: 82%;*/
-    /*height: 82%;*/
-    /*left: 9%;*/
-    /*top: 9%;*/
-/*}*/
-
-/*The team section*/
-
-/*#team-container {*/
-/*position: absolute;*/
-/*left: 0;*/
-/*top: 300%;*/
-/*height: 130%;*/
-/*width: 100%;*/
-/*background-color: #ffe1de;*/
-/*!*background-color: black;*!*/
-/*}*/
-
-/*#team-section {*/
-/*position: absolute;*/
-/*border-style: solid;*/
-/*border-width: 10px;*/
-/*top: 5%;*/
-/*width: 80%;*/
-/*left: 10%;*/
-/*z-index: 0;*/
-/*border-color: transparent;*/
-/*height: calc(90% - 20px);*/
-/*}*/
-
-/*.image-container {*/
-/*!*border-style: solid;*!*/
-/*height: 65%;*/
-/*}*/
-
-/*.image-container img {*/
-/*position: absolute;*/
-/*top: 5%;*/
-/*width: 50%;*/
-/*left: 25%;*/
-/*-webkit-border-radius: 30%;*/
-/*-moz-border-radius: 30%;*/
-/*border-radius: 30%;*/
-/*!*border-style: solid;*!*/
-/*}*/
-
-/*.card h1, p {*/
-/*text-align: center;*/
-/*font-family: Montserrat;*/
-/*}*/
-
-
-/*.card {*/
-/*-webkit-border-radius: 30%;*/
-/*-moz-border-radius: 30%;*/
-/*border-radius: 30%;*/
-/*position: absolute;*/
-/*width: 33.33%;*/
-/*height: 50%;*/
-
-/*!*background-color: white;*!*/
-
-/*!*border-style: solid;*!*/
-
-/*-webkit-transition: ease-in-out 0.2s;*/
-/*-moz-transition: ease-in-out 0.2s;*/
-/*-ms-transition: ease-in-out 0.2s;*/
-/*-o-transition: ease-in-out 0.2s;*/
-/*transition: ease-in-out 0.2s;*/
-/*}*/
-
-/*.card:hover {*/
-/*box-shadow: 10px 10px 10px 10px #888888;*/
-/*cursor: pointer;*/
-/*}*/
-
-/*#Roshan {*/
-/*top: 100%;*/
-/*left: 0;*/
-/*}*/
-
-/*#Neel {*/
-/*top: 0;*/
-/*left: 33.33%;*/
-/*}*/
-
-/*#Kevin {*/
-/*top: 51%;*/
-/*left: 0;*/
-/*}*/
-
-/*#David {*/
-/*top: 0;*/
-/*left: 66.66%;*/
-/*}*/
-
-/*#Aishik {*/
-/*top: 51%;*/
-/*left: 66.66%;*/
-/*}*/
-
-/*#Peyton {*/
-/*top: calc(51 * 2%);*/
-/*left: 33.33%;*/
-/*}*/
-
-/*#Dwijen {*/
-/*top: 51%;*/
-/*left: 33.33%;*/
-/*}*/
-
-/*#sponsor {*/
-/*position: absolute;*/
-/*top: 400%;*/
-/*}*/
-
-
-
 #team-container {
     position: absolute;
     left: 0;
@@ -505,7 +386,7 @@
 }
 
 #Roshan {
-    top: 100%;
+    top: 0;
     left: 0;
 }
 
@@ -618,78 +499,14 @@
     color: #ff7f78;
 }
 
-
-
-/*@media (min-width: 1680px) {*/
-/*.second-row {*/
-/*top: calc(49.6%);*/
-/*}*/
-
-/*#first-section {*/
-/*top: 34%;*/
-/*}*/
-/*}*/
-
-
-/*@media (min-width: 1920px) {*/
-/*.second-row {*/
-/*top: calc(49.9%);*/
-/*}*/
-
-/*#first-section {*/
-/*position: absolute;*/
-/*top: 35%;*/
-/*left: 25%;*/
-/*width: 50%;*/
-/*text-align: center;*/
-/*}*/
-/*}*/
-
-/*@media (max-width: 1024px) and (orientation: landscape) {*/
-/*.card h1 {*/
-/*font-size: 30px;*/
-/*}*/
-
-/*.first-row {*/
-/*top: 10%;*/
-/*}*/
-
-/*.faqcomponent {*/
-/*height: 38%;*/
-/*}*/
-
-/*.second-row {*/
-/*top: calc(50.5% + 1px);*/
-/*}*/
-
-/*.card {*/
-/*height: 43%;*/
-/*}*/
-
-/*#first-section {*/
-/*width: 100%;*/
-/*left: 0;*/
-/*}*/
-/*}*/
-
-/*@media (max-width: 1366px) and (max-height: 768px) {*/
-/*#first-section {*/
-/*top: 27%;*/
-/*}*/
-
-/*.faqcomponent {*/
-/*height: 38%;*/
-/*}*/
-
-/*.first-row {*/
-/*top: 7%;*/
-/*}*/
-
-/*.second-row {*/
-/*top: 49.2%;*/
-/*}*/
-/*}*/
-
+#logistics {
+    position: absolute;
+    top: 430%;
+    left: 0;
+    height: 170%;
+    width: 100%;
+    background: white;
+}
 
 @font-face {
     font-family: Montserrat;

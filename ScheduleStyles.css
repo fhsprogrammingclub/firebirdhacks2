@@ -1,0 +1,50 @@
+table {
+    position: absolute;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+    left: 10%;
+    top: 15%;
+}
+
+th {
+    font-size: 3.5vh;
+}
+
+td, th {
+    border: 1px solid white;
+    text-align: left;
+    padding: 8px;
+    width: 50%;
+    font-family: Montserrat;
+}
+
+tr:nth-child(even) {
+    background-color: #ffe1de;
+}
+
+#map {
+    position: absolute;
+    z-index: 999;
+    top: 461%;
+    left: 60%;
+    height: 58%;  /* The height is 400 pixels */
+    width: 30%;  /* The width is the width of the web page */
+}
+
+#logistics-title {
+    margin-top: 5%;
+    font-family: Montserrat;
+    font-size: 7vh;
+    letter-spacing: 0.5vw;
+    text-align: center;
+}
+
+#venue {
+    position: absolute;
+    top: calc(461% + 58% + 10%);
+    left: 60%;
+    width: 30%;
+    height: 20%;
+    background: #ffe1de;
+}

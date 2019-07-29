@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="en">
 
 <!--DO NOT DELETE-->
@@ -99,6 +99,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./Assets/Libraries/animations.css">
+    <link rel="stylesheet" href="./ScheduleStyles.css">
     <script src="./Assets/Libraries/jquery-3.3.1.min.js"></script>
     <script src="https://kit.fontawesome.com/61eb020609.js"></script>
     <meta charset="UTF-8">
@@ -415,21 +416,127 @@
     </div>
 </div>
 
-<div id="sponsors">
-    <div class="sponsor">
+<div id="logistics">
+    <h1 id="logistics-title">Logistics</h1>
 
-    </div>
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Event</th>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>Sign In</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>Opening Ceremonies</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>Sponsor Presentations</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+
+        <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>Presentations</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>Judging</td>
+        </tr>
+        <tr>
+            <td>TBD</td>
+            <td>Closing Ceremonies</td>
+        </tr>
+    </table>
 </div>
 
+<div id="map"></div>
+
+<div id="venue"></div>
+<script>
+    function initMap() {
+        var location = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 7,
+            center: location
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo0Q75DZYPqQSvNnVTWJZsgZ3EdqQddDo&callback=initMap"></script>
 
 </body>
 </html>
-
-<script>
-    function openGithub(var person) {
-        if (person == 1) {
-
-        } else 5
-
-    }
-</script>
