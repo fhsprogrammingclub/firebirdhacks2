@@ -38,6 +38,7 @@ tr:nth-child(even) {
     font-size: 7vh;
     letter-spacing: 0.5vw;
     text-align: center;
+    color: #f0b6b1;
 }
 
 #venue {
@@ -47,4 +48,17 @@ tr:nth-child(even) {
     width: 30%;
     height: 20%;
     background: #ffe1de;
+
+}
+
+#venue-container {
+    margin-left: 8%;
+}
+
+#venue-container h1, p {
+    font-family: Montserrat;
+}
+
+#venue-container p {
+    text-align: left;
 }

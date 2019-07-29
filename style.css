@@ -37,8 +37,8 @@
     text-align: center;
     background: transparent;
     top: 49%;
-    width: 70%;
-    left: 15%;
+    width: 80%;
+    left: 10%;
     z-index: 999;
 }
 
@@ -126,15 +126,6 @@
 
 }
 
-#faq {
-    position: absolute;
-    border-style: solid;
-    border-width: 1px;
-    width: 40%;
-    height: 100%;
-    left: 30%;
-}
-
 .faqcontainer {
     /*border-style: solid;*/
     width: 100%;
@@ -146,12 +137,12 @@
 .faqcomponent h2 {
     font-family: Montserrat;
     text-align: center;
-    font-size: 3vh;
+    font-size: 2vw;
 }
 
 .faqcomponent p {
     text-align: center;
-    font-size: 2.7vh;
+    font-size: 1.4vw;
     /*border-style: solid;*/
     font-family: Montserrat;
 }
@@ -239,7 +230,7 @@
     position: absolute;
     color: red;
     font-family: Montserrat;
-    font-size: 5vh;
+    font-size: 3vw;
     text-align: left;
     width: 60%;
     left: 20%;
@@ -282,12 +273,13 @@
     /*transform: scale(1.1);*/
 /*}*/
 
+
 #about-description {
     color: #ab0000;
     font-family: Montserrat;
     font-size: 20px;
     text-align: left;
-    font-size: 3vh;
+    font-size: 1.5vw;
 }
 
 #about-container {
