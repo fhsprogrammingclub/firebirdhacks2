@@ -62,6 +62,29 @@
 <!--</script>-->
 
 <script>
+    $(window).on("load", function () {
+        $(window).scroll(function () {
+            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+            $(".fade").each(function () {
+                /* Check the location of each desired element */
+                var objectBottom = $(this).offset().top + $(this).outerHeight();
+
+                /* If the element is completely within bounds of the window, fade it in */
+                if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                    if ($(this).css("opacity") == 0) {
+                        $(this).fadeTo(500, 1);
+                    }
+                } else { //object goes out of view (scrolling up)
+                    if ($(this).css("opacity") == 1) {
+                        $(this).fadeTo(500, 0);
+                    }
+                }
+            });
+        }).scroll(); //invoke scroll-handler on page-load
+    });
+</script>
+
+<script>
     function scrollToFAQ() {
         document.getElementById("logo-section").scrollIntoView({
             behavior: "smooth"
@@ -159,12 +182,10 @@
     <!--First row of faq-->
     <div class="first-row flex-container">
         <div class="faqcomponent first-in-first-row" id="hackathon">
-            <div class="faqcontainer">
-                <h2 class="text">What is a hackathon?</h2>
-                <p class="text">A hackathon is a coding marathon event where people design and implement solutions to
-                    problems, or create new
-                    and creative softwares.</p>
-            </div>
+            <h2 class="text">What is a hackathon?</h2>
+            <p class="text">A hackathon is a coding marathon event where people design and implement solutions to
+                problems, or create new
+                and creative softwares.</p>
         </div>
 
 
@@ -222,7 +243,7 @@
 <div id="about">
     <div id="about-container">
         <div id="about-title-section">
-            <p class="text" id="about-title">About Firebird Hacks 2.0</p>
+            <p class="text fade" id="about-title">About Firebird Hacks 2.0</p>
         </div>
         <div id="about-paragraph">
             <p class="text" id="about-description">
@@ -349,7 +370,7 @@
 
         <div class="card" id="Kevin">
             <div class="image-container">
-                <img src="./Assets/hosts/neel.jpg" class="team-images">
+                <img src="./Assets/hosts/kevin.jpg" class="team-images">
             </div>
             <h1 class="team-text">Kevin Wang</h1>
             <nav class="profile-menu">
