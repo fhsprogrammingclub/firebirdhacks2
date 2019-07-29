@@ -4,5 +4,7 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="aos" level="application" />
+    <orderEntry type="library" name="61eb020609" level="application" />
   </component>
 </module>

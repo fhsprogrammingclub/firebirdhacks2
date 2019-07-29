@@ -62,29 +62,6 @@
 <!--</script>-->
 
 <script>
-    $(window).on("load", function () {
-        $(window).scroll(function () {
-            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-            $(".fade").each(function () {
-                /* Check the location of each desired element */
-                var objectBottom = $(this).offset().top + $(this).outerHeight();
-
-                /* If the element is completely within bounds of the window, fade it in */
-                if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-                    if ($(this).css("opacity") == 0) {
-                        $(this).fadeTo(500, 1);
-                    }
-                } else { //object goes out of view (scrolling up)
-                    if ($(this).css("opacity") == 1) {
-                        $(this).fadeTo(500, 0);
-                    }
-                }
-            });
-        }).scroll(); //invoke scroll-handler on page-load
-    });
-</script>
-
-<script>
     function scrollToFAQ() {
         document.getElementById("logo-section").scrollIntoView({
             behavior: "smooth"
@@ -125,32 +102,30 @@
     }
 </script>
 
-<!--fade in when 100% is passed-->
-<script>
-    $(window).scroll(function () {
-        console.log($(window).scrollTop());
-        var topDivHeight = $("#about").height();
-        var viewPortSize = $(window).height();
-
-        var triggerAt = topDivHeight;
-        var triggerHeight = (topDivHeight - viewPortSize) + triggerAt;
-
-        if ($(window).scrollTop() >= triggerHeight) {
-            $('.faqcomponent').css('visibility', 'visible').hide().fadeIn();
-            $(this).off('scroll');
-        }
-    });
-</script>
-
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./Assets/Libraries/animations.css">
     <link rel="stylesheet" href="./ScheduleStyles.css">
     <script src="./Assets/Libraries/jquery-3.3.1.min.js"></script>
     <script src="https://kit.fontawesome.com/61eb020609.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <meta charset="UTF-8">
     <title>Firebird Hacks 2.0</title>
 </head>
+
+<script>
+    $(function() {
+        AOS.init();
+    });
+
+    $(window).on('load', function() {
+        AOS.refresh();
+    });
+</script>
+
 <body onload="loadPage()">
 
 <div id="particles-js" style="z-index: 9999"></div>
@@ -175,7 +150,7 @@
     </div>
 </nav>
 
-<div id="logo-section">
+<div id="logo-section" data-aos="zoom-out-up">
 
     <img src="Assets/logo.png" id="logo-img">
 
@@ -189,19 +164,19 @@
         </div>
 
 
-        <div class="faqcomponent" id="team">
+        <div class="faqcomponent hideme" id="team">
             <h2 class="text">Can I work in a team?</h2>
             <p class="text">Competitors are allowed to work individually or in teams of up to 4 people.</p>
         </div>
 
-        <div class="faqcomponent" id="cost">
+        <div class="faqcomponent hideme" id="cost">
             <h2 class="text">What do I need to pay for?</h2>
             <p class="text">FirebirdHacks is completely free of charge! All food, drinks, and swag are included as we
                 want to create
                 the best possible environment for hackers.</p>
         </div>
 
-        <div class="faqcomponent last-in-first-row" id="description">
+        <div class="faqcomponent last-in-first-row hideme" id="description">
             <h2 class="text">What is Firebird Hacks</h2>
             <p class="text">Firebird Hacks will be a fun way for hackers to get together and design innovative and
                 useful solutions.
@@ -212,21 +187,21 @@
 
     <!--second row-->
     <div class="second-row flex-container">
-        <div class="faqcomponent first-in-second-row" id="prerequisites">
+        <div class="faqcomponent first-in-second-row hideme" id="prerequisites">
             <h2 class="text">Are there any required prerequisites?</h2>
             <p class="text">While at our hackathon, you must adhere to firebird hacks and mlh guidelines. Precoding is
                 forbidden, and is
                 considered cheating. </p>
         </div>
 
-        <div class="faqcomponent" id="is-needed">
+        <div class="faqcomponent hideme" id="is-needed">
             <h2 class="text">What will I need to bring?</h2>
             <p class="text">You will need a laptop, a valid student ID (or some sort of student ID), chargers, your
                 phone, a
                 blanket/sleeping bag, toiletries, and any supplies you need for your hack.</p>
         </div>
 
-        <div class="faqcomponent last-in-second-row" id="experience">
+        <div class="faqcomponent last-in-second-row hideme" id="experience">
             <h2 class="text">Is experience needed?</h2>
             <p class="text">Not at all! In fact, Firebird hacks is a great way to begin your programming journey! A
                 basic
@@ -241,7 +216,7 @@
 </div>
 
 <div id="about">
-    <div id="about-container">
+    <div id="about-container" data-aos="fade-up">
         <div id="about-title-section">
             <p class="text fade" id="about-title">About Firebird Hacks 2.0</p>
         </div>
@@ -262,7 +237,7 @@
 
 <div id="team-container">
     <div id="team-section">
-        <div class="card" id="roshan">
+        <div class="card" id="roshan" data-aos="fade-up">
             <div class="image-container">
                 <img src="./Assets/hosts/roshan.jpg" class="team-images">
             </div>
@@ -296,7 +271,7 @@
             </nav>
         </div>
 
-        <div class="card" id="Neel">
+        <div class="card" id="Neel" data-aos="fade-up">
             <div class="image-container">
                 <img src="./Assets/hosts/neel.jpg" class="team-images">
             </div>
@@ -332,7 +307,7 @@
             </nav>
         </div>
 
-        <div class="card" id="David">
+        <div class="card" id="David" data-aos="fade-up">
             <div class="image-container">
                 <img src="./Assets/hosts/david.jpg" class="team-images">
             </div>
@@ -368,7 +343,7 @@
             </nav>
         </div>
 
-        <div class="card" id="Kevin">
+        <div class="card" id="Kevin" data-aos="fade-up">
             <div class="image-container">
                 <img src="./Assets/hosts/kevin.jpg" class="team-images">
             </div>
@@ -404,7 +379,7 @@
             </nav>
         </div>
 
-        <div class="card" id="Dwijen">
+        <div class="card" id="Dwijen" data-aos="fade-up">
             <div class="image-container">
                 <img src="./Assets/hosts/dwijen.jpg" class="team-images">
             </div>
@@ -440,7 +415,7 @@
             </nav>
         </div>
 
-        <div class="card" id="Aishik">
+        <div class="card" id="Aishik" data-aos="fade-up">
             <div class="image-container">
                 <img src="./Assets/hosts/aishik.jpg" class="team-images">
             </div>
@@ -465,7 +440,7 @@
 <div id="logistics">
     <h1 id="logistics-title">Logistics</h1>
 
-    <table>
+    <table data-aos="fade-up">
         <tr>
             <th>Time</th>
             <th>Event</th>
@@ -570,9 +545,9 @@
     </table>
 </div>
 
-<div id="map"></div>
+<div id="map" data-aos="fade-up"></div>
 
-<div id="venue">
+<div id="venue" data-aos="fade-up">
     <div id="venue-container">
         <h1>Venue</h1>
         <p>TBD</p>
