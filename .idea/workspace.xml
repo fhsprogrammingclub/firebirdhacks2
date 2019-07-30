@@ -17,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="771">
-              <caret line="136" column="45" selection-start-line="136" selection-start-column="45" selection-end-line="136" selection-end-column="45" />
+            <state relative-caret-position="447">
+              <caret line="257" lean-forward="true" selection-start-line="238" selection-end-line="257" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#nav#0;n#div#4;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -33,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5595">
-              <caret line="373" lean-forward="true" selection-start-line="373" selection-end-line="373" />
+            <state relative-caret-position="806">
+              <caret line="385" column="30" lean-forward="true" selection-start-line="385" selection-start-column="30" selection-end-line="385" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -96,8 +96,8 @@
         <option value="$PROJECT_DIR$/error.css" />
         <option value="$PROJECT_DIR$/mobile.html" />
         <option value="$PROJECT_DIR$/ScheduleStyles.css" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -110,9 +110,9 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -120,7 +120,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,6 +152,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -231,7 +231,9 @@
       <workItem from="1564351024455" duration="11868000" />
       <workItem from="1564375871656" duration="2047000" />
       <workItem from="1564415781903" duration="6210000" />
-      <workItem from="1564428664486" duration="462000" />
+      <workItem from="1564428664486" duration="1593000" />
+      <workItem from="1564433978697" duration="537000" />
+      <workItem from="1564502332674" duration="528000" />
     </task>
     <task id="LOCAL-00001" summary="added initial stylings for homepage">
       <created>1561690456610</created>
@@ -562,17 +564,24 @@
       <option name="project" value="LOCAL" />
       <updated>1564428291195</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="changed animation for starting slide to less resource intense">
+      <created>1564429275548</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1564429275549</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114465000" />
+    <option name="totallyTimeSpent" value="116661000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49752474" visible="true" weight="0.21173105" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49752474" visible="true" weight="0.16187434" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50247526" side_tool="true" weight="0.18884121" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -637,7 +646,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added height stylings for team section, removed peyton" />
     <MESSAGE value="added dwijen's profile" />
     <MESSAGE value="added dwijen's photo" />
     <MESSAGE value="fixed title positioning" />
@@ -662,7 +670,8 @@
     <MESSAGE value="added aos library for animations" />
     <MESSAGE value="added additional animations (logistics title)" />
     <MESSAGE value="changed pointer styles for profile icons" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed pointer styles for profile icons" />
+    <MESSAGE value="changed animation for starting slide to less resource intense" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed animation for starting slide to less resource intense" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Libraries/particles.js-master/demo/js/lib/stats.js" />
@@ -714,17 +723,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5595">
-          <caret line="373" lean-forward="true" selection-start-line="373" selection-end-line="373" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="771">
-          <caret line="136" column="45" selection-start-line="136" selection-start-column="45" selection-end-line="136" selection-end-column="45" />
+        <state relative-caret-position="447">
+          <caret line="257" lean-forward="true" selection-start-line="238" selection-end-line="257" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#nav#0;n#div#4;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -732,6 +734,13 @@
             <element signature="n#style#0;n#span#2;n#nav#0;n#div#4;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#nav#0;n#div#5;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="385" column="30" lean-forward="true" selection-start-line="385" selection-start-column="30" selection-end-line="385" selection-end-column="30" />
         </state>
       </provider>
     </entry>
