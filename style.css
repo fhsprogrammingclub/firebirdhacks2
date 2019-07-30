@@ -1,3 +1,9 @@
+body {
+    margin-left: 0%;
+    height: 100%;
+    width: 100%;
+}
+
 /*title*/
 
 #first-section {
@@ -301,6 +307,79 @@
     top: 10%;
 }
 
+#sponsors {
+    position: absolute;
+    top: 300%;
+    width: 100%;
+    height: 100%;
+}
+#sponsortitlesection {
+    width: auto;
+    padding: 2.5%;
+    font-size: 50px;
+}
+
+#sponsortitle {
+    margin: 0px;
+}
+
+.sponsorsnote {
+    font-size: 20px;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+
+.sponsorimages {
+    height: auto;
+    width: 100%;
+    padding: 5%;
+    justify-content: left;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+
+.flex-container {
+    display: flex;
+}
+img {
+    display: block;
+}
+
+.row {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    max-width: var(--site-width);
+    width: 100%;
+}
+
+.row > * {
+    max-width: 100%;
+}
+
+.row > :not(:only-child) {
+    padding: 1rem 0;
+}
+
+.row.columns-half > * {
+    flex: 1 auto;
+}
+
+.row.columns-tiny > * {
+    flex: 1 calc(90px + 8 * var(--vw));
+    max-width: calc((90px + 8 * var(--vw)) * 1.25);
+}
+
+.row > * > * + * {
+    margin-top: 0.6rem;
+}
+
+.image {
+    width: auto;
+    height: 10%;
+}
+
+
 /*The team section*/
 
 /*#team-container {*/
@@ -416,7 +495,7 @@
 #team-container {
     position: absolute;
     left: 0;
-    top: 300%;
+    top: 400%;
     height: 130%;
     width: 100%;
     background-color: #ffe1de;
@@ -640,5 +719,5 @@
 
 @font-face {
     font-family: Montserrat;
-    src: url("../firebirdhacks2/montserrat/Montserrat-Thin.otf");
+    src: url("../firebirdhacks2/montserrat/Montserrat-Light.otf");
 }

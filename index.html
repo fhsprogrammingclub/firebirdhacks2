@@ -89,120 +89,158 @@
 </head>
 <body onload="loadPage()">
 
-<div id="particles-js" style="z-index: 9999"></div>
-<script src="./Assets/Libraries/particles.js-master/particles.js"></script>
-<script src="./Assets/Libraries/particles.js-master/demo/js/app.js"></script>
+<div class="wrapper" style="width: 100%">
 
-<div id="first-section">
-    <div class="title-holder slideUp">
-        <p class="text" id="title">Firebird Hacks 2.0</p>
+    <div id="particles-js" style="z-index: 9999"></div>
+    <script src="./Assets/Libraries/particles.js-master/particles.js"></script>
+    <script src="./Assets/Libraries/particles.js-master/demo/js/app.js"></script>
+
+    <div id="first-section">
+        <div class="title-holder slideUp">
+            <p class="text" id="title">Firebird Hacks 2.0</p>
+        </div>
     </div>
-</div>
 
-<nav class="fadeIn nav1">
-    <div class="menu">
-        <ul class="menu-area">
-            <li><a onclick="scrollToFAQ()">FAQ</a></li>
-            <li><a onclick="scrollToAbout()">About FirebirdHacks</a></li>
-            <li><a onclick="scrollToTeam()">Our Team</a></li>
-            <li><a onclick="openSponsorshipProspectus()">Sponsorship Prospectus</a></li>
-        </ul>
-    </div>
-</nav>
-<div id="logo-section">
+    <nav class="fadeIn nav1">
+        <div class="menu">
+            <ul class="menu-area">
+                <li><a onclick="scrollToFAQ()">FAQ</a></li>
+                <li><a onclick="scrollToAbout()">About FirebirdHacks</a></li>
+                <li><a onclick="scrollToTeam()">Our Team</a></li>
+                <li><a onclick="openSponsorshipProspectus()">Sponsorship Prospectus</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="logo-section">
 
-    <img src="Assets/logo.png" id="logo-img">
+        <img src="Assets/logo.png" id="logo-img">
 
-    <!--First row of faq-->
-    <div class="first-row flex-container">
-        <div class="faqcomponent first-in-first-row" id="hackathon">
-            <div class="faqcontainer">
-            <h2 class="text">What is a hackathon?</h2>
-            <p class="text">A hackathon is a coding marathon event where people design and implement solutions to
-                problems, or create new
-                and creative softwares.</p>
+        <!--First row of faq-->
+        <div class="first-row">
+            <div class="faqcomponent first-in-first-row" id="hackathon">
+                <div class="faqcontainer">
+                <h2 class="text">What is a hackathon?</h2>
+                <p class="text">A hackathon is a coding marathon event where people design and implement solutions to
+                    problems, or create new
+                    and creative softwares.</p>
+                </div>
+            </div>
+
+
+            <div class="faqcomponent" id="team">
+                <h2 class="text">Can I work in a team?</h2>
+                <p class="text">Competitors are allowed to work individually or in teams of up to 4 people.</p>
+            </div>
+
+            <div class="faqcomponent" id="cost">
+                <h2 class="text">What do I need to pay for?</h2>
+                <p class="text">FirebirdHacks is completely free of charge! All food, drinks, and swag are included as we
+                    want to create
+                    the best possible environment for hackers.</p>
+            </div>
+
+            <div class="faqcomponent last-in-first-row" id="description">
+                <h2 class="text">What is Firebird Hacks?</h2>
+                <p class="text">Firebird Hacks will be a fun way for hackers to get together and design innovative and
+                    useful solutions.</p>
             </div>
         </div>
 
+        <!--second row-->
+        <div class="second-row">
+            <div class="faqcomponent first-in-second-row" id="prerequisites">
+                <h2 class="text">Are there any required prerequisites?</h2>
+                <p class="text">While at our hackathon, you must adhere to firebird hacks and mlh guidelines. Precoding is
+                    forbidden, and is
+                    considered cheating. </p>
+            </div>
 
-        <div class="faqcomponent" id="team">
-            <h2 class="text">Can I work in a team?</h2>
-            <p class="text">Competitors are allowed to work individually or in teams of up to 4 people.</p>
+            <div class="faqcomponent" id="is-needed">
+                <h2 class="text">What will I need to bring?</h2>
+                <p class="text">You will need a laptop, a valid student ID (or some sort of student ID), chargers, your
+                    phone, a
+                    blanket/sleeping bag, toiletries, and any supplies you need for your hack.</p>
+            </div>
+
+            <div class="faqcomponent last-in-second-row" id="experience">
+                <h2 class="text">Is experience needed?</h2>
+                <p class="text">Not at all! In fact, Firebird hacks is a great way to begin your programming journey! A
+                    basic
+                    understanding is recommended, but we will have workshops and mentors to help you make your project idea
+                    a reality.</p>
+            </div>
         </div>
 
-        <div class="faqcomponent" id="cost">
-            <h2 class="text">What do I need to pay for?</h2>
-            <p class="text">FirebirdHacks is completely free of charge! All food, drinks, and swag are included as we
-                want to create
-                the best possible environment for hackers.</p>
-        </div>
+        <!--<div class="faqcomponent" id="filler"></div>-->
 
-        <div class="faqcomponent last-in-first-row" id="description">
-            <h2 class="text">What is Firebird Hacks</h2>
-            <p class="text">Firebird Hacks will be a fun way for hackers to get together and design innovative and
-                useful solutions.
-                Firebird Hacks, we will provide a learning environment for people of all experience levels to come and
-                code!</p>
+        <!--</div>-->
+    </div>
+
+    <div id="about">
+        <div id="about-container">
+            <div id="about-title-section">
+                <p class="text" id="about-title">About Firebird Hacks 2.0</p>
+            </div>
+            <div id="about-paragraph">
+                <p class="text" id="about-description">
+                    Fremont High School's Second Annual Hackathon!
+                    <br><br>
+                    We bring together hundreds of high school students from across the Bay Area to work together and make
+                    their
+                    ideas a reality.
+                    <br><br>
+                    We'll provide the food, refreshments and hacking spaces for you—the hackers—to do your magic. Just bring
+                    your ideas and your passion!
+                </p>
+            </div>
         </div>
     </div>
 
-    <!--second row-->
-    <div class="second-row flex-container">
-        <div class="faqcomponent first-in-second-row" id="prerequisites">
-            <h2 class="text">Are there any required prerequisites?</h2>
-            <p class="text">While at our hackathon, you must adhere to firebird hacks and mlh guidelines. Precoding is
-                forbidden, and is
-                considered cheating. </p>
-        </div>
 
-        <div class="faqcomponent" id="is-needed">
-            <h2 class="text">What will I need to bring?</h2>
-            <p class="text">You will need a laptop, a valid student ID (or some sort of student ID), chargers, your
-                phone, a
-                blanket/sleeping bag, toiletries, and any supplies you need for your hack.</p>
-        </div>
-
-        <div class="faqcomponent last-in-second-row" id="experience">
-            <h2 class="text">Is experience needed?</h2>
-            <p class="text">Not at all! In fact, Firebird hacks is a great way to begin your programming journey! A
-                basic
-                understanding is recommended, but we will have workshops and mentors to help you make your project idea
-                a reality.</p>
-        </div>
-    </div>
-
-    <!--<div class="faqcomponent" id="filler"></div>-->
-
-    <!--</div>-->
-</div>
-
-<div id="about">
-    <div id="about-container">
-        <div id="about-title-section">
-            <p class="text" id="about-title">About Firebird Hacks 2.0</p>
-        </div>
-        <div id="about-paragraph">
-            <p class="text" id="about-description">
-                Fremont High School's Second Annual Hackathon!
-                <br><br>
-                We bring together hundreds of high school students from across the Bay Area to work together and make
-                their
-                ideas a reality.
-                <br><br>
-                We'll provide the food, refreshments and hacking spaces for you—the hackers—to do your magic. Just bring
-                your ideas and your passion!
+    <div id="sponsors">
+        <div id="sponsortitlesection">
+            <p class="text" id="sponsortitle">
+                Our Sponsors
             </p>
         </div>
+        <div class="sponsorsnote">
+            <p class="text">
+                We are very thankful to these generous 
+                companies for sponsoring this event. If you are interested in
+                sponsoring us, please reach out to us at 
+                <a href="mailto:sponsor@firebirdhacks.tech">sponsor@firebirdhacks.tech</a> 
+            </p>
+        </div>
+        <div class="row columns-medium">
+            <a href="https://18techventures.com"><img class="image" id="techventures" src="./Assets/Sponsors/techventures.png"></a>
+            <p class="imagep"><img class="image" id="hackclubbank" src="./Assets/Sponsors/hackclub.png"></p>
+        </div>
     </div>
-</div>
 
-<div id="team-container">
-    <div id="team-section">
-        <div class="card" id="roshan">
-            <div class="image-container">
-                <img src="./Assets/hosts/neel.jpg" id="generic-image">
+    <div id="team-container">
+        <div id="team-section">
+            <div class="card" id="roshan">
+                <div class="image-container">
+                    <img src="./Assets/hosts/neel.jpg" id="generic-image">
+                </div>
+                <nav class="content"><h1>Roshan Prabhakar</h1>
+                    <nav class="profile-menu">
+                        <div class="profile-menu-area">
+                            <ul>
+                                <li class="profile-image"><img src="github.png"></li>
+                                <li class="profile-image"><img src="email.png"></li>
+                                <li class="profile-image"><img src="linkedin.png"></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </nav>
             </div>
-            <nav class="content"><h1>Roshan Prabhakar</h1>
+
+            <div class="card" id="Neel">
+                <div class="image-container">
+                    <img src="./Assets/hosts/neel.jpg">
+                </div>
+                <h1>Neel Kandlikar</h1>
                 <nav class="profile-menu">
                     <div class="profile-menu-area">
                         <ul>
@@ -212,110 +250,89 @@
                         </ul>
                     </div>
                 </nav>
-            </nav>
-        </div>
-
-        <div class="card" id="Neel">
-            <div class="image-container">
-                <img src="./Assets/hosts/neel.jpg">
             </div>
-            <h1>Neel Kandlikar</h1>
-            <nav class="profile-menu">
-                <div class="profile-menu-area">
-                    <ul>
-                        <li class="profile-image"><img src="github.png"></li>
-                        <li class="profile-image"><img src="email.png"></li>
-                        <li class="profile-image"><img src="linkedin.png"></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
 
-        <div class="card" id="David">
-            <div class="image-container">
-                <img src="./Assets/hosts/neel.jpg">
+            <div class="card" id="David">
+                <div class="image-container">
+                    <img src="./Assets/hosts/neel.jpg">
+                </div>
+                <h1>David Zhang</h1>
+                <nav class="profile-menu">
+                    <div class="profile-menu-area">
+                        <ul>
+                            <li class="profile-image"><img src="github.png"></li>
+                            <li class="profile-image"><img src="email.png"></li>
+                            <li class="profile-image"><img src="linkedin.png"></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <h1>David Zhang</h1>
-            <nav class="profile-menu">
-                <div class="profile-menu-area">
-                    <ul>
-                        <li class="profile-image"><img src="github.png"></li>
-                        <li class="profile-image"><img src="email.png"></li>
-                        <li class="profile-image"><img src="linkedin.png"></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
 
-        <div class="card" id="Kevin">
-            <div class="image-container">
-                <img src="./Assets/hosts/neel.jpg">
+            <div class="card" id="Kevin">
+                <div class="image-container">
+                    <img src="./Assets/hosts/neel.jpg">
+                </div>
+                <h1>Kevin Wang</h1>
+                <nav class="profile-menu">
+                    <div class="profile-menu-area">
+                        <ul>
+                            <li class="profile-image"><img src="github.png"></li>
+                            <li class="profile-image"><img src="email.png"></li>
+                            <li class="profile-image"><img src="linkedin.png"></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <h1>Kevin Wang</h1>
-            <nav class="profile-menu">
-                <div class="profile-menu-area">
-                    <ul>
-                        <li class="profile-image"><img src="github.png"></li>
-                        <li class="profile-image"><img src="email.png"></li>
-                        <li class="profile-image"><img src="linkedin.png"></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
 
-        <div class="card" id="Dwijen">
-            <div class="image-container">
-                <img src="./Assets/hosts/dwijen.jpg">
+            <div class="card" id="Dwijen">
+                <div class="image-container">
+                    <img src="./Assets/hosts/dwijen.jpg">
+                </div>
+                <h1>Dwijen Chawra</h1>
+                <nav class="profile-menu">
+                    <div class="profile-menu-area">
+                        <ul>
+                            <li class="profile-image">
+                                <i class="fa fab fa-github" aria-hidden="true"></i>
+                            </li>
+                            <li class="profile-image">
+                                <i class="fa fas fa-envelope" aria-hidden="true"></i>
+                            </li>
+                            <li class="profile-image">
+                                <i class="fa fab fa-linkedin" aria-hidden="true"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <h1>Dwijen Chawra</h1>
-            <nav class="profile-menu">
-                <div class="profile-menu-area">
-                    <ul>
-                        <li class="profile-image">
-                            <i class="fa fab fa-github" aria-hidden="true"></i>
-                        </li>
-                        <li class="profile-image">
-                            <i class="fa fas fa-envelope" aria-hidden="true"></i>
-                        </li>
-                        <li class="profile-image">
-                            <i class="fa fab fa-linkedin" aria-hidden="true"></i>
-                        </li>
-                    </ul>
+
+            <!--<div class="card" id="Peyton">-->
+            <!--<div class="image-container">-->
+            <!--<img src="./Assets/hosts/neel.jpg">-->
+            <!--</div>-->
+            <!--<h1>Peyton Carol</h1>-->
+            <!--<p>Sponsorship</p>-->
+            <!--<p>roshanprabhakar987@gmail.com</p>-->
+            <!--</div>-->
+
+            <div class="card" id="Aishik">
+                <div class="image-container">
+                    <img src="./Assets/hosts/neel.jpg">
                 </div>
-            </nav>
-        </div>
-
-        <!--<div class="card" id="Peyton">-->
-        <!--<div class="image-container">-->
-        <!--<img src="./Assets/hosts/neel.jpg">-->
-        <!--</div>-->
-        <!--<h1>Peyton Carol</h1>-->
-        <!--<p>Sponsorship</p>-->
-        <!--<p>roshanprabhakar987@gmail.com</p>-->
-        <!--</div>-->
-
-        <div class="card" id="Aishik">
-            <div class="image-container">
-                <img src="./Assets/hosts/neel.jpg">
+                <h1>Aishik Bhattacharyya</h1>
+                <nav class="profile-menu">
+                    <div class="profile-menu-area">
+                        <ul>
+                            <li class="profile-image"><img src="github.png"></li>
+                            <li class="profile-image"><img src="email.png"></li>
+                            <li class="profile-image"><img src="linkedin.png"></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <h1>Aishik Bhattacharyya</h1>
-            <nav class="profile-menu">
-                <div class="profile-menu-area">
-                    <ul>
-                        <li class="profile-image"><img src="github.png"></li>
-                        <li class="profile-image"><img src="email.png"></li>
-                        <li class="profile-image"><img src="linkedin.png"></li>
-                    </ul>
-                </div>
-            </nav>
         </div>
     </div>
-</div>
 
-<div id="sponsors">
-    <div class="sponsor">
-
-    </div>
 </div>
 
 
