@@ -37,8 +37,8 @@
     text-align: center;
     background: transparent;
     top: 49%;
-    width: 80%;
-    left: 10%;
+    width: 100%;
+    left: 0;
     z-index: 999;
 }
 
