@@ -94,18 +94,13 @@
         })
     }
 
-    function loadMobileIfNeeded() {
-        if (window.innerHeight >= window.innerWidth) {
-            location.replace("https://fhsprogrammingclub.github.io/redirect/")
-        }
-    }
+    
 
     function openSponsorshipProspectus() {
         window.open("Sponsorship Prospectus.pdf")
     }
 
     function loadPage() {
-        loadMobileIfNeeded();
         document.getElementsByClassName("image-container").style.height = document.getElementById("generic-image").clientHeight;
     }
 </script>
@@ -119,7 +114,7 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Firebird Hacks 2.0</title>
 </head>
