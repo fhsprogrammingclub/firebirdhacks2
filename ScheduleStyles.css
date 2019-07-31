@@ -38,7 +38,7 @@ tr:nth-child(even) {
 #map {
     position: absolute;
     z-index: 999;
-    top: calc(561% - 30%);
+    top: calc(561% - 20%);
     left: 60%;
     height: 58%;  /* The height is 400 pixels */
     width: 30%;  /* The width is the width of the web page */
@@ -55,7 +55,7 @@ tr:nth-child(even) {
 
 #venue {
     position: absolute;
-    top: calc(461% + 58% + 10% + 100% - 30%);
+    top: calc(461% + 58% + 10% + 100% - 20%);
     left: 60%;
     width: 30%;
     height: 39%;

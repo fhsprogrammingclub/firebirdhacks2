@@ -380,21 +380,22 @@
     position: absolute;
     left: 0;
     top: calc(400% - 30%);
-    height: 130%;
+    height: 140%;
     width: 100%;
     background-color: #ffe1de;
     /*background-color: black;*/
+    /*border-style: solid;*/
 }
 
 #team-section {
     position: absolute;
-    border-style: solid;
+    /*border-style: solid;*/
     border-width: 10px;
     top: 5%;
     width: 80%;
     left: 10%;
     z-index: 0;
-    border-color: transparent;
+    /*border-color: transparent;*/
     height: calc(90% - 20px);
     /*background-color: black;*/
 }
@@ -556,11 +557,12 @@
 
 #logistics {
     position: absolute;
-    top: calc(530% - 30%);
+    top: calc(530% - 20%);
     left: 0;
     height: 170%;
     width: 100%;
     background: white;
+    /*border-style: solid;*/
 }
 
 .icon:hover {
@@ -570,4 +572,62 @@
 @font-face {
     font-family: Montserrat;
     src: url("../firebirdhacks2/montserrat/Montserrat-Thin.otf");
+}
+
+@media (max-aspect-ratio: 20/10) {
+
+    #Kevin {
+        top: 51%;
+        left: 0;
+    }
+
+    #Aishik {
+        top: 51%;
+        left: 66.66%;
+    }
+
+    #Dwijen {
+        top: 51%;
+        left: 33.33%;
+    }
+
+    #team-container {
+        position: absolute;
+        left: 0;
+        top: calc(400% - 30%);
+        height: 120%;
+        width: 100%;
+        background-color: #ffe1de;
+        /*border-style: solid;*/
+    }
+
+    #team-section {
+        position: absolute;
+        border-width: 10px;
+        top: 5%;
+        width: 80%;
+        left: 10%;
+        z-index: 0;
+        height: calc(90% - 20px);
+    }
+
+
+    #logistics {
+        position: absolute;
+        /*top: calc(530% - 40%);*/
+        left: 0;
+        height: 170%;
+        width: 100%;
+        background: white;
+        /*border-style: solid;*/
+    }
+
+    #map {
+        position: absolute;
+        z-index: 999;
+
+        left: 60%;
+        height: 58%;  /* The height is 400 pixels */
+        width: 30%;  /* The width is the width of the web page */
+    }
 }
