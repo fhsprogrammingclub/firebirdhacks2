@@ -154,7 +154,6 @@
             <li><a onclick="scrollToTeam()">Our Team</a></li>
             <li><a onclick="scrollToLogistics()">Logistics</a></li>
             <li><a onclick="scrollToSponsors()">Our Sponsors</a></li>
-            <li><a onclick="openSponsorshipProspectus()">Sponsorship Prospectus</a></li>
         </ul>
     </div>
 </nav>
@@ -245,19 +244,21 @@
 </div>
 
 <div id="sponsors">
-    <p class="text" id="sponsortitle"  data-aos="fade-down">
+    <p class="text" id="sponsortitle" data-aos="fade-down">
         Our Sponsors
     </p>
-    <div class="sponsorsnote"  data-aos="fade-up">
+    <div class="sponsorsnote" data-aos="fade-up">
         <p class="text">
             We are very thankful to these generous
             companies for sponsoring this event. If you are interested in
             sponsoring us, please reach out to us at
-            <a href="mailto:sponsor@firebirdhacks.tech" id="sponsorship-email">sponsor@firebirdhacks.tech</a>
+            <a href="mailto:sponsor@firebirdhacks.tech" class="sponsorship-email">sponsor@firebirdhacks.tech</a>. Our
+            sponsorship prospectus can be viewed <a onclick="openSponsorshipProspectus()" class="sponsorship-email">here</a>.
         </p>
     </div>
-    <div class="sponsor-logos"  data-aos="fade-up">
-        <a href="https://18techventures.com"><img class="image" id="techventures" src="./Assets/Sponsors/techventures.png"></a>
+    <div class="sponsor-logos" data-aos="fade-up">
+        <a href="https://18techventures.com"><img class="image" id="techventures"
+                                                  src="./Assets/Sponsors/techventures.png"></a>
         <a href="https://hackclub.com/bank/"><img class="image" id="hackclubbank" src="./Assets/Sponsors/hackclub.png"></a>
     </div>
 </div>
@@ -270,17 +271,6 @@
             </div>
             <h1 class="team-text">Roshan Prabhakar</h1>
             <nav class="profile-menu">
-                <!--<ul>-->
-                <!--<li class="profile-image">-->
-                <!--<i class="fa fab fa-github" aria-hidden="true"></i>-->
-                <!--</li>-->
-                <!--<li class="profile-image">-->
-                <!--<i class="fa fas fa-envelope" aria-hidden="true"></i>-->
-                <!--</li>-->
-                <!--<li class="profile-image">-->
-                <!--<i class="fa fab fa-linkedin" aria-hidden="true"></i>-->
-                <!--</li>-->
-
                 <span style="font-size: 3em; color: BLACK;" class="icon-container">
                           <i class="fa fab fa-github fa-xs icon"></i>
                         </span>
@@ -304,18 +294,6 @@
             </div>
             <h1 class="team-text">Neel Kandlikar</h1>
             <nav class="profile-menu">
-                <!--<div class="profile-menu-area">-->
-                <!--<ul>-->
-                <!--<li class="profile-image">-->
-                <!--<i class="fa fab fa-github" aria-hidden="true"></i>-->
-                <!--</li>-->
-                <!--<li class="profile-image">-->
-                <!--<i class="fa fas fa-envelope" aria-hidden="true"></i>-->
-                <!--</li>-->
-                <!--<li class="profile-image">-->
-                <!--<i class="fa fab fa-linkedin" aria-hidden="true"></i>-->
-                <!--</li>-->
-
                 <span style="font-size: 3em; color: BLACK;" class="icon-container">
                           <i class="fa fab fa-github fa-xs icon"></i>
                         </span>
@@ -340,18 +318,6 @@
             </div>
             <h1 class="team-text">David Zhang</h1>
             <nav class="profile-menu">
-                <!--<div class="profile-menu-area">-->
-                <!--<ul>-->
-                <!--<li class="profile-image">-->
-                <!--<i class="fa fab fa-github" aria-hidden="true"></i>-->
-                <!--</li>-->
-                <!--<li class="profile-image">-->
-                <!--<i class="fa fas fa-envelope" aria-hidden="true"></i>-->
-                <!--</li>-->
-                <!--<li class="profile-image">-->
-                <!--<i class="fa fab fa-linkedin" aria-hidden="true"></i>-->
-                <!--</li>-->
-
                 <span style="font-size: 3em; color: BLACK;" class="icon-container">
                           <i class="fa fab fa-github fa-xs icon"></i>
                         </span>
@@ -376,18 +342,6 @@
             </div>
             <h1 class="team-text">Kevin Wang</h1>
             <nav class="profile-menu">
-                <!--<div class="profile-menu-area">-->
-                <!--<ul>-->
-                <!--<li class="profile-image">-->
-                <!--<i class="fa fab fa-github" aria-hidden="true"></i>-->
-                <!--</li>-->
-                <!--<li class="profile-image">-->
-                <!--<i class="fa fas fa-envelope" aria-hidden="true"></i>-->
-                <!--</li>-->
-                <!--<li class="profile-image">-->
-                <!--<i class="fa fab fa-linkedin" aria-hidden="true"></i>-->
-                <!--</li>-->
-
                 <span style="font-size: 3em; color: BLACK;" class="icon-container">
                           <i class="fa fab fa-github fa-xs icon"></i>
                         </span>
@@ -412,18 +366,6 @@
             </div>
             <h1 class="team-text">Dwijen Chawra</h1>
             <nav class="profile-menu">
-                <!--<div class="profile-menu-area">-->
-                <!--<ul>-->
-                <!--<li class="profile-image">-->
-                <!--<i class="fa fab fa-github" aria-hidden="true"></i>-->
-                <!--</li>-->
-                <!--<li class="profile-image">-->
-                <!--<i class="fa fas fa-envelope" aria-hidden="true"></i>-->
-                <!--</li>-->
-                <!--<li class="profile-image">-->
-                <!--<i class="fa fab fa-linkedin" aria-hidden="true"></i>-->
-                <!--</li>-->
-
                 <span style="font-size: 3em; color: BLACK;" class="icon-container">
                           <i class="fa fab fa-github fa-xs"></i>
                         </span>
@@ -448,7 +390,7 @@
             </div>
             <h1 class="team-text">Aishik Bhattacharyya</h1>
             <nav class="profile-menu">
-                    <span style="font-size: 3em; color: BLACK;" class="icon-container" onclick="openAishikGithub()" )>
+                    <span style="font-size: 3em; color: BLACK;" class="icon-container">
                           <i class="fa fab fa-github fa-xs icon"></i>
                      </span>
 
