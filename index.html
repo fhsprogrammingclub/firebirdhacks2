@@ -94,18 +94,15 @@
         })
     }
 
-    function loadMobileIfNeeded() {
-        if (window.innerHeight >= window.innerWidth) {
-            location.replace("https://fhsprogrammingclub.github.io/redirect/")
-        }
-    }
-
     function openSponsorshipProspectus() {
         window.open("Sponsorship Prospectus.pdf")
     }
+</script>
 
-    function loadPage() {
-        loadMobileIfNeeded();
+
+<script>
+    if (window.innerHeight >= window.innerWidth) {
+        location.replace("https://fhsprogrammingclub.github.io/redirect/")
     }
 </script>
 
@@ -132,7 +129,7 @@
     });
 </script>
 
-<body onload="loadPage()">
+<body>
 
 <div id="particles-js" style="z-index: 9999"></div>
 <script src="./Assets/Libraries/particles.js-master/particles.js"></script>
