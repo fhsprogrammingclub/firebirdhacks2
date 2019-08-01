@@ -614,12 +614,12 @@
 
     #logistics {
         position: absolute;
-        /*top: calc(530% - 40%);*/
+        top: calc(530% - 40%);
         left: 0;
         height: 170%;
         width: 100%;
         background: white;
-        /*border-style: solid;*/
+        border-style: solid;
     }
 
     #map {
@@ -627,8 +627,8 @@
         z-index: 999;
 
         left: 60%;
-        height: 58%;  /* The height is 400 pixels */
-        width: 30%;  /* The width is the width of the web page */
+        height: 58%;
+        width: 30%;
     }
 
 

@@ -140,9 +140,9 @@
         <ul class="menu-area">
             <li><a onclick="scrollToFAQ()">FAQ</a></li>
             <li><a onclick="scrollToAbout()">About FirebirdHacks</a></li>
+            <li><a onclick="scrollToSponsors()">Our Sponsors</a></li>
             <li><a onclick="scrollToTeam()">Our Team</a></li>
             <li><a onclick="scrollToLogistics()">Logistics</a></li>
-            <li><a onclick="scrollToSponsors()">Our Sponsors</a></li>
         </ul>
     </div>
 </nav>
@@ -242,13 +242,15 @@
             companies for sponsoring this event. If you are interested in
             sponsoring us, please reach out to us at
             <a href="mailto:sponsor@firebirdhacks.tech" class="sponsorship-email">sponsor@firebirdhacks.tech</a>. Our
-            sponsorship prospectus can be viewed <a onclick="openSponsorshipProspectus()" class="sponsorship-email">here</a>.
+            sponsorship prospectus can be viewed <a onclick="openSponsorshipProspectus()"
+                                                    class="sponsorship-email">here</a>.
         </p>
     </div>
     <div class="sponsor-logos" data-aos="fade-up">
         <a href="https://18techventures.com"><img class="image" id="techventures"
                                                   src="./Assets/Sponsors/techventures.png"></a>
-        <a href="https://hackclub.com/bank"><img class="image" id="hackclubbank" src="./Assets/Sponsors/hackclub.png"></a>
+        <a href="https://hackclub.com/bank"><img class="image" id="hackclubbank"
+                                                 src="./Assets/Sponsors/hackclub.png"></a>
     </div>
 </div>
 
@@ -501,16 +503,18 @@
             <td>Closing Ceremonies</td>
         </tr>
     </table>
-</div>
-<div id="map" data-aos="fade-up"></div>
-<div id="venue" data-aos="fade-up">
-    <div id="venue-container">
-        <h1>Venue</h1>
-        <p>TBD</p>
+
+    <div id="map-container"  data-aos="fade-up">
+        <div id="map"></div>
+    </div>
+
+    <div id="venue" data-aos="fade-up">
+        <div id="venue-container">
+            <h1>Venue</h1>
+            <p>TBD</p>
+        </div>
     </div>
 </div>
-
-
 
 <script>
     function initMap() {
