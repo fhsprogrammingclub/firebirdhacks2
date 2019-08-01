@@ -630,4 +630,14 @@
         height: 58%;  /* The height is 400 pixels */
         width: 30%;  /* The width is the width of the web page */
     }
+
+
+    #first-section {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+    }
+
 }
