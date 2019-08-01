@@ -1,13 +1,10 @@
 table {
-    /*position: absolute;*/
+    position: absolute;
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 40%;
-    margin-left: 10%;
-    /*margin-top: 15%;*/
-    float: left;
-
-    /*border-style: solid;*/
+    left: 10%;
+    top: 15%;
 }
 
 th {
@@ -39,26 +36,16 @@ tr:nth-child(even) {
 }
 
 #map {
-    /*position: absolute;*/
+    position: absolute;
     z-index: 999;
-    /*top: calc(561% - 20%);*/
-    /*left: 60%;*/
+    top: calc(561% - 40%);
+    left: 60%;
     height: 58%;  /* The height is 400 pixels */
     width: 30%;  /* The width is the width of the web page */
 }
 
-#map-container {
-    margin-right: 10%;
-    margin-bottom: 5%;
-    float: right;
-    width: 30%;
-    height: 0;
-    /*border-style: solid;*/
-}
-
 #logistics-title {
     margin-top: 5%;
-    /*border-style: solid;*/
     font-family: Montserrat;
     font-size: 7vh;
     letter-spacing: 0.5vw;
@@ -67,20 +54,17 @@ tr:nth-child(even) {
 }
 
 #venue {
-    /*position: absolute;*/
-    /*top: calc(461% + 58% + 10% + 100% - 20%);*/
-    /*left: 60%;*/
+    position: absolute;
+    top: calc(461% + 58% + 10% + 100% - 40%);
+    left: 60%;
     width: 30%;
-    height: 30%;
+    height: 39%;
     background: #ffe1de;
-    float: right;
-    /*border-style: solid;*/
-    margin-right: 10%;
+
 }
 
 #venue-container {
     margin-left: 8%;
-    /*border-style: solid;*/
 }
 
 #venue-container h1, p {
