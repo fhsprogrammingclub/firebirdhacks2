@@ -578,7 +578,7 @@ body {
     src: url("../firebirdhacks2/montserrat/Montserrat-Thin.otf");
 }
 
-@media (max-aspect-ratio: 20/10) {
+@media (max-aspect-ratio: 2/1) {
 
     #Kevin {
         top: 51%;
@@ -643,5 +643,11 @@ body {
         width: 80%;
         text-align: center;
     }
+}
 
+@media (min-aspect-ratio: 198/100) {
+    #logistics {
+        background-color: black;
+
+    }
 }
