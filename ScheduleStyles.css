@@ -74,3 +74,19 @@ tr:nth-child(even) {
 #venue-container p {
     text-align: left;
 }
+
+@media (min-aspect-ratio: 198/100) {
+    #map {
+        position: absolute;
+        z-index: 999;
+
+        top: 542%;
+        left: 60%;
+        height: 58%; /* The height is 400 pixels */
+        width: 30%; /* The width is the width of the web page */
+    }
+
+    #venue {
+        top: calc(461% + 58% + 10% + 100% - 20%);
+    }
+}

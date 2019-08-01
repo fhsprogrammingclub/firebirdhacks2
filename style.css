@@ -485,7 +485,6 @@ body {
 }
 
 
-
 /*icon bar for profiles*/
 .profile-menu {
     position: relative;
@@ -626,15 +625,13 @@ body {
         /*border-style: solid;*/
     }
 
-    #map {
-        position: absolute;
-        z-index: 999;
-
-        left: 60%;
-        height: 58%;  /* The height is 400 pixels */
-        width: 30%;  /* The width is the width of the web page */
-    }
-
+    /*#map {*/
+    /*position: absolute;*/
+    /*z-index: 999;*/
+    /*left: 60%;*/
+    /*height: 58%;  !* The height is 400 pixels *!*/
+    /*width: 30%;  !* The width is the width of the web page *!*/
+    /*}*/
 
     #first-section {
         position: absolute;
@@ -642,12 +639,5 @@ body {
         left: 10%;
         width: 80%;
         text-align: center;
-    }
-}
-
-@media (min-aspect-ratio: 198/100) {
-    #logistics {
-        background-color: black;
-
     }
 }
