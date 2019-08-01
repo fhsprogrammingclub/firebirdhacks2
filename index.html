@@ -2,64 +2,70 @@
 <html lang="en">
 
 <!--DO NOT DELETE-->
-<!--<script>-->
-<!--const map = new Map([[1, -335137], [2, -335394], [3, -335137], [4, -335138], [5, -335137], [6, -335394], [7, -335137], [8, -335138], [9, -335137], [10, -335394], [11, -335137], [12, -335138], [13, -335137], [14, -335394], [15, -335137], [16, -335138], [17, -335137], [18, -335394], [19, -335137], [20, -335138], [21, -335137], [22, -335394], [23, -335137], [24, -335138], [25, -335137], [26, -335394], [27, -335137], [28, -335138], [29, -335137], [30, -335394], [31, -335137], [32, -335138], [33, -335137], [34, -335394], [35, -335137], [36, -335138], [37, -335137], [38, -335394], [39, -335137], [40, -335138], [41, -335137], [42, -335394], [43, -335137], [44, -335138], [45, -335137], [46, -335394], [47, -335137], [48, -335138], [49, -335137], [50, -335394], [51, -335137], [52, -335138], [53, -335137], [54, -335394], [55, -335137], [56, -335138], [57, -335137], [58, -335394], [59, -335137], [60, -1124396], [61, -1913654], [62, -2702914], [63, -3491916], [64, -4281431], [65, -5070434], [66, -5925485], [67, -6648951], [68, -7503746], [69, -8227469], [70, -9082264], [71, -9871522], [72, -10660781], [73, -11450040], [74, -12239299], [75, -13028301], [76, -13883352], [77, -14606819], ]);-->
+<script>
+    const map = new Map([[1, -11453317], [2, -11321989], [3, -11190917], [4, -11125381], [5, -10994053], [6, -10862981], [7, -10797190], [8, -10666118], [9, -10600326], [10, -10469254], [11, -10338182], [12, -10272390], [13, -10141318], [14, -10009990], [15, -9944454], [16, -9813127], [17, -9747591], [18, -9616263], [19, -9485191], [20, -9419655], [21, -9288327], [22, -9157255], [23, -9091463], [24, -8960391], [25, -8829063], [26, -8763528], [27, -8632456], [28, -8566664], [29, -8435592], [30, -8304264], [31, -8238728], [32, -8107400], [33, -7976328], [34, -7910792], [35, -7779464], [36, -7648393], [37, -7582601], [38, -7451529], [39, -7385737], [40, -7254665], [41, -7123593], [42, -7057801], [43, -6926729], [44, -6795401], [45, -6729866], [46, -6598538], [47, -6533002], [48, -6401930], [49, -6270602], [50, -6205066], [51, -6073738], [52, -5942666], [53, -5876874], [54, -5745802], [55, -5614731], [56, -5548939], [57, -5417867], [58, -5352075], [59, -5221003], [60, -5089675], [61, -5024139], [62, -4893067], [63, -4761739], [64, -4696203], [65, -4564876], [66, -4433804], [67, -4368012], [68, -4236940], [69, -4171404], [70, -4040076], [71, -3909004], [72, -3843212], [73, -3712140], [74, -3580813], [75, -3515277], [76, -3384205], [77, -3318413],]);
 
-<!--//not the correct color -> rgb conversion-->
-<!--function toColor(num) {-->
-<!--// num >>>= 0;-->
-<!--// var b = num & 0xFF,-->
-<!--//     g = (num & 0xFF00) >>> 8,-->
-<!--//     r = (num & 0xFF0000) >>> 16,-->
-<!--//     a = ((num & 0xFF000000) >>> 24) / 255;-->
-<!--// return "rgba(" + [r, g, b].join(",") + ")";-->
-<!--return "#" + ('000000' + ((num) >>> 0).toString(16)).slice(-6);-->
-<!--}-->
-<!--window.addEventListener("scroll", function (event) {-->
-<!--// Get scroll position-->
-<!--var scroll = this.scrollY;-->
-<!--// Get possible scroll maximum-->
-<!--var maxscroll = document.documentElement.scrollHeight;-->
-<!--// Make percentage thing (so we get a number from 0 to 1)-->
-<!--var percentage = scroll / maxscroll;-->
-<!--// Set percentage as opacity of text-->
-<!--var img = new Image();-->
-<!--img.src = "gradient.png";-->
-<!--let list = document.getElementsByClassName("team-text");-->
-<!--for (var i = 0; i < list.length; i++) {-->
-<!--list[i].style.color = toColor(map.get(parseInt(percentage * 100 + 1)));-->
-<!--// console.log(toColor(map.get(parseInt(percentage * 100 + 1))));-->
-<!--}-->
 
-<!--list = document.getElementsByClassName("fa-linkedin");-->
-<!--for (var i = 0; i < list.length; i++) {-->
-<!--list[i].style.color = toColor(map.get(parseInt(percentage * 100 + 1)));-->
-<!--// console.log(toColor(map.get(parseInt(percentage * 100 + 1))));-->
-<!--}-->
+    //not the correct color -> rgb conversion
+    function toColor(num) {
+// num >>>= 0;
+// var b = num & 0xFF,
+//     g = (num & 0xFF00) >>> 8,
+//     r = (num & 0xFF0000) >>> 16,
+//     a = ((num & 0xFF000000) >>> 24) / 255;
+// return "rgba(" + [r, g, b].join(",") + ")";
+        return "#" + ('000000' + ((num) >>> 0).toString(16)).slice(-6);
+    }
 
-<!--list = document.getElementsByClassName("fa-github");-->
-<!--for (var i = 0; i < list.length; i++) {-->
-<!--list[i].style.color = toColor(map.get(parseInt(percentage * 100 + 1)));-->
-<!--// console.log(toColor(map.get(parseInt(percentage * 100 + 1))));-->
-<!--}-->
+    window.addEventListener("scroll", function (event) {
+// Get scroll position
+        var scroll = this.scrollY;
+// Get possible scroll maximum
+        var maxscroll = document.documentElement.scrollHeight;
+// Make percentage thing (so we get a number from 0 to 1)
+        var percentage = scroll / maxscroll / 5.7055837563451774;
+        console.log("scroll: " + scroll);
+        console.log("maxscroll: " + maxscroll);
+        console.log("percentage: " + percentage);
+// Set percentage as opacity of text
+//         var img = new Image();
+//         img.src = "gradient.png";
+//         let list = document.getElementsByClassName("text");
+//         for (var i = 0; i < list.length; i++) {
+//             list[i].style.color = toColor(map.get(parseInt(percentage * 100 + 1)));
+// // console.log(toColor(map.get(parseInt(percentage * 100 + 1))));
+//         }
 
-<!--list = document.getElementsByClassName("fa-envelope");-->
-<!--for (var i = 0; i < list.length; i++) {-->
-<!--list[i].style.color = toColor(map.get(parseInt(percentage * 100 + 1)));-->
-<!--// console.log(toColor(map.get(parseInt(percentage * 100 + 1))));-->
-<!--}-->
+//         list = document.getElementsByClassName("fa-linkedin");
+//         for (var i = 0; i < list.length; i++) {
+//             list[i].style.color = toColor(map.get(parseInt(percentage * 100 + 1)));
+// // console.log(toColor(map.get(parseInt(percentage * 100 + 1))));
+//         }
 
-<!--list = document.getElementsByClassName("team-images");-->
-<!--for (var i = 0; i < list.length; i++) {-->
-<!--list[i].style.opacity = percentage * (100 / 77);-->
-<!--// console.log(toColor(map.get(parseInt(percentage * 100 + 1))));-->
-<!--}-->
+//         list = document.getElementsByClassName("fa-github");
+//         for (var i = 0; i < list.length; i++) {
+//             list[i].style.color = toColor(map.get(parseInt(percentage * 100 + 1)));
+// // console.log(toColor(map.get(parseInt(percentage * 100 + 1))));
+//         }
 
-<!--// document.getElementById("about-container").style.borderColor = toColor(map.get(parseInt(percentage * 100 + 1)));-->
-<!--// document.getElementById("logo-section").style.backgroundColor = toColor(map.get(parseInt(percentage * 100 + 1)));-->
-<!--// document.getElementsByClassName("card").style.backgroundColor = toColor(map.get(parseInt(percentage * 100 + 1)));-->
-<!--});-->
-<!--</script>-->
+//         list = document.getElementsByClassName("fa-envelope");
+//         for (var i = 0; i < list.length; i++) {
+//             list[i].style.color = toColor(map.get(parseInt(percentage * 100 + 1)));
+// // console.log(toColor(map.get(parseInt(percentage * 100 + 1))));
+//         }
+
+        // list = document.getElementsByClassName("team-images");
+        // for (var i = 0; i < list.length; i++) {
+        //     list[i].style.opacity = percentage * (100 / 77);
+        //     // console.log(toColor(map.get(parseInt(percentage * 100 + 1))));
+        // }
+        document.body.style.backgroundColor = toColor(map.get(parseInt(percentage * 100 + 1)));
+
+// document.getElementById("about-container").style.borderColor = toColor(map.get(parseInt(percentage * 100 + 1)));
+// document.getElementById("logo-section").style.backgroundColor = toColor(map.get(parseInt(percentage * 100 + 1)));
+// document.getElementsByClassName("card").style.backgroundColor = toColor(map.get(parseInt(percentage * 100 + 1)));
+    });
+</script>
 
 <script>
     function scrollToSponsors() {
@@ -242,13 +248,15 @@
             companies for sponsoring this event. If you are interested in
             sponsoring us, please reach out to us at
             <a href="mailto:sponsor@firebirdhacks.tech" class="sponsorship-email">sponsor@firebirdhacks.tech</a>. Our
-            sponsorship prospectus can be viewed <a onclick="openSponsorshipProspectus()" class="sponsorship-email">here</a>.
+            sponsorship prospectus can be viewed <a onclick="openSponsorshipProspectus()"
+                                                    class="sponsorship-email">here</a>.
         </p>
     </div>
     <div class="sponsor-logos" data-aos="fade-up">
         <a href="https://18techventures.com"><img class="image" id="techventures"
                                                   src="./Assets/Sponsors/techventures.png"></a>
-        <a href="https://hackclub.com/bank"><img class="image" id="hackclubbank" src="./Assets/Sponsors/hackclub.png"></a>
+        <a href="https://hackclub.com/bank"><img class="image" id="hackclubbank"
+                                                 src="./Assets/Sponsors/hackclub.png"></a>
     </div>
 </div>
 
@@ -258,7 +266,7 @@
             <div class="image-container">
                 <img src="./Assets/hosts/roshan.jpg" class="team-images">
             </div>
-            <h1 class="team-text">Roshan Prabhakar</h1>
+            <h1 class="team-text" class="text">Roshan Prabhakar</h1>
             <nav class="profile-menu">
                 <span style="font-size: 3em; color: BLACK;" class="icon-container">
                           <i class="fa fab fa-github fa-xs icon"></i>
@@ -509,7 +517,6 @@
         <p>TBD</p>
     </div>
 </div>
-
 
 
 <script>
