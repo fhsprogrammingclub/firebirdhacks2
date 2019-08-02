@@ -104,13 +104,21 @@
     //         location.replace("https://fhsprogrammingclub.github.io/redirect/")
     //     }
     // }
-    function loadPage() {
-        //     loadMobileIfNeeded();
-        document.getElementsByClassName("image-container").style.height = document.getElementById("generic-image").clientHeight;
-    }
+
+    // document.getElementsByClassName("image-container").style.height = document.getElementById("generic-image").clientHeight;
 </script>
 
+<!--<script>-->
+    <!--SA.redirection_mobile({mobile_url : "fhsprogrammingclub.github.io/redirect/"});-->
+<!--</script>-->
+
 <head>
+
+    <script>
+        SA.redirection_mobile({mobile_url : "fhsprogrammingclub.github.io/redirect/"});
+    </script>
+
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./Assets/Libraries/animations.css">
     <link rel="stylesheet" href="./ScheduleStyles.css">
@@ -123,10 +131,6 @@
     <meta charset="UTF-8">
     <title>Firebird Hacks 2.0</title>
 </head>
-
-<script>
-    SA.redirection_mobile({mobile_url: "fhsprogrammingclub.github.io/redirect/"});
-</script>
 
 <script>
     $(function () {
