@@ -1,10 +1,21 @@
+/*table {*/
+/*position: absolute;*/
+/*font-family: arial, sans-serif;*/
+/*border-collapse: collapse;*/
+/*width: 40%;*/
+/*left: 10%;*/
+/*top: 15%;*/
+/*}*/
+
 table {
-    position: absolute;
+    position: relative;
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 40%;
-    left: 10%;
-    top: 15%;
+    height: 100%;
+    float: left;
+    /*left: 10%;*/
+    /*top: 15%;*/
 }
 
 th {
@@ -31,17 +42,30 @@ td:hover {
     background-color: #c98b87;
 }
 
-tr:nth-child(even) {
+tr:nth-child(odd) {
     background-color: #ffe1de;
 }
 
+/*#map {*/
+/*position: absolute;*/
+/*z-index: 999;*/
+/*top: calc(561% - 40%);*/
+/*left: 60%;*/
+/*height: 58%;  !* The height is 400 pixels *!*/
+/*width: 30%;  !* The width is the width of the web page *!*/
+/*}*/
+
+#logistics-content {
+    /*border-style: solid;*/
+    height: 100%;
+}
+
 #map {
-    position: absolute;
+    position: relative;
+    float: right;
     z-index: 999;
-    top: calc(561% - 40%);
-    left: 60%;
-    height: 58%;  /* The height is 400 pixels */
-    width: 30%;  /* The width is the width of the web page */
+    height: 100%; /* The height is 400 pixels */
+    width: 30%; /* The width is the width of the web page */
 }
 
 #logistics-title {
@@ -53,14 +77,23 @@ tr:nth-child(even) {
     color: #f0b6b1;
 }
 
-#venue {
-    position: absolute;
-    top: calc(461% + 58% + 10% + 100% - 40%);
-    left: 60%;
-    width: 30%;
-    height: 39%;
-    background: #ffe1de;
+/*#venue {*/
+    /*position: absolute;*/
+    /*top: calc(461% + 58% + 10% + 100% - 40%);*/
+    /*left: 60%;*/
+    /*width: 30%;*/
+    /*height: 39%;*/
+    /*background: #ffe1de;*/
 
+/*}*/
+
+#venue {
+    position: relative;
+    float: right;
+
+    width: 30%;
+    height: 100%;
+    background: #ffe1de;
 }
 
 #venue-container {
@@ -75,18 +108,18 @@ tr:nth-child(even) {
     text-align: left;
 }
 
-@media (min-aspect-ratio: 198/100) {
-    #map {
-        position: absolute;
-        z-index: 999;
+/*@media (min-aspect-ratio: 198/100) {*/
+/*#map {*/
+/*position: absolute;*/
+/*z-index: 999;*/
 
-        top: 542%;
-        left: 60%;
-        height: 58%; /* The height is 400 pixels */
-        width: 30%; /* The width is the width of the web page */
-    }
+/*top: 522%;*/
+/*left: 60%;*/
+/*height: 58%; !* The height is 400 pixels *!*/
+/*width: 30%; !* The width is the width of the web page *!*/
+/*}*/
 
-    #venue {
-        top: calc(461% + 58% + 10% + 100% - 20%);
-    }
-}
+/*#venue {*/
+/*top: calc(461% + 58% + 10% + 100% - 20%);*/
+/*}*/
+/*}*/

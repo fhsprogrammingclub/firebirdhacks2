@@ -562,7 +562,7 @@ body {
     position: absolute;
     top: calc(530% - 20%);
     left: 0;
-    height: 170%;
+    height: 120%;
     width: 100%;
     background: white;
     /*border-style: solid;*/

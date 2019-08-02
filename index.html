@@ -69,28 +69,44 @@
             inline: 'center'
         })
     }
+
     function scrollToFAQ() {
         document.getElementById("logo-section").scrollIntoView({
             behavior: "smooth"
         })
     }
+
     function scrollToLogistics() {
         document.getElementById("logistics").scrollIntoView({
             behavior: "smooth"
         })
     }
+
     function scrollToAbout() {
         document.getElementById("about").scrollIntoView({
             behavior: "smooth"
         })
     }
+
     function scrollToTeam() {
         document.getElementById("team-container").scrollIntoView({
             behavior: "smooth"
         })
     }
+
     function openSponsorshipProspectus() {
         window.open("Sponsorship Prospectus.pdf")
+    }
+
+    // function loadMobileIfNeeded() {
+    //
+    //     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    //         location.replace("https://fhsprogrammingclub.github.io/redirect/")
+    //     }
+    // }
+    function loadPage() {
+        //     loadMobileIfNeeded();
+        document.getElementsByClassName("image-container").style.height = document.getElementById("generic-image").clientHeight;
     }
 </script>
 
@@ -100,13 +116,17 @@
     <link rel="stylesheet" href="./ScheduleStyles.css">
     <script src="./Assets/Libraries/jquery-3.3.1.min.js"></script>
     <script src="https://kit.fontawesome.com/61eb020609.js"></script>
-
+    <script src="Assets/Libraries/redirection-mobile.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Firebird Hacks 2.0</title>
 </head>
+
+<script>
+    SA.redirection_mobile({mobile_url: "fhsprogrammingclub.github.io/redirect/"});
+</script>
 
 <script>
     $(function () {
@@ -127,7 +147,6 @@
     <!--<div class="title-holder slideUp">-->
     <div class="title-holder"></div>
     <p class="text" id="title" data-aos="fade-zoom-in">Firebird Hacks 2.0</p>
-</div>
 </div>
 
 <nav class="fadeIn nav1">
@@ -237,13 +256,15 @@
             companies for sponsoring this event. If you are interested in
             sponsoring us, please reach out to us at
             <a href="mailto:sponsor@firebirdhacks.tech" class="sponsorship-email">sponsor@firebirdhacks.tech</a>. Our
-            sponsorship prospectus can be viewed <a onclick="openSponsorshipProspectus()" class="sponsorship-email">here</a>.
+            sponsorship prospectus can be viewed <a onclick="openSponsorshipProspectus()"
+                                                    class="sponsorship-email">here</a>.
         </p>
     </div>
     <div class="sponsor-logos" data-aos="fade-up">
         <a href="https://18techventures.com"><img class="image" id="techventures"
                                                   src="./Assets/Sponsors/techventures.png"></a>
-        <a href="https://hackclub.com/bank"><img class="image" id="hackclubbank" src="./Assets/Sponsors/hackclub.png"></a>
+        <a href="https://hackclub.com/bank"><img class="image" id="hackclubbank"
+                                                 src="./Assets/Sponsors/hackclub.png"></a>
     </div>
 </div>
 
@@ -392,122 +413,122 @@
 
 <div id="logistics">
     <h1 id="logistics-title" data-aos="fade-down">Logistics</h1>
+    <div id="logistics-content">
+        <table data-aos="fade-up">
+            <tr>
+                <th>Time</th>
+                <th>Event</th>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>Sign In</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>Opening Ceremonies</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>Sponsor Presentations</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+            </tr>
 
-    <table data-aos="fade-up">
-        <tr>
-            <th>Time</th>
-            <th>Event</th>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>Sign In</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>Opening Ceremonies</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>Sponsor Presentations</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>TBD</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>TBD</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>TBD</td>
-        </tr>
+            <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>TBD</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>Presentations</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>Judging</td>
+            </tr>
+            <tr>
+                <td>TBD</td>
+                <td>Closing Ceremonies</td>
+            </tr>
+        </table>
 
-        <tr>
-            <td>TBD</td>
-            <td>TBD</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>TBD</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>TBD</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>TBD</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>TBD</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>TBD</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>TBD</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>TBD</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>TBD</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>TBD</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>TBD</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>TBD</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>TBD</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>TBD</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>TBD</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>Presentations</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>Judging</td>
-        </tr>
-        <tr>
-            <td>TBD</td>
-            <td>Closing Ceremonies</td>
-        </tr>
-    </table>
-</div>
+        <div id="venue" data-aos="fade-up">
+            <div id="venue-container">
+                <h1>Venue</h1>
+                <p>TBD</p>
+            </div>
+        </div>
 
-<div id="map" data-aos="fade-up"></div>
+        <div id="map" data-aos="fade-up"></div>
 
-<div id="venue" data-aos="fade-up">
-    <div id="venue-container">
-        <h1>Venue</h1>
-        <p>TBD</p>
     </div>
 </div>
-
-
 
 <script>
     function initMap() {
